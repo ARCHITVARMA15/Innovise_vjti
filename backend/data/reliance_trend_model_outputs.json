@@ -1,0 +1,954 @@
+{
+  "meta": {
+    "ticker": "RELIANCE",
+    "trained_at_utc": "2026-03-29T04:03:45.659634+00:00",
+    "period": "5y",
+    "horizon_days": 30,
+    "train_samples": 968,
+    "test_samples": 242,
+    "last_close": 1348.1,
+    "feature_names": [
+      "ret_1d",
+      "ret_5d",
+      "sma5_gap",
+      "sma20_gap",
+      "vol_5d"
+    ],
+    "output_path": "C:\\dev\\work\\CodeCrafters\\backend\\data\\reliance_trend_model_outputs.json"
+  },
+  "model_1": {
+    "name": "Linear Trend Regressor",
+    "type": "regression",
+    "target": "next_day_return",
+    "test_mae": 0.009118,
+    "directional_accuracy": 0.5289
+  },
+  "model_2": {
+    "name": "Logistic Trend Classifier",
+    "type": "classification",
+    "target": "next_day_direction_up_down",
+    "test_accuracy": 0.5413,
+    "brier_score": 0.249799
+  },
+  "model_3": {
+    "name": "Linear Stochastic Regressor",
+    "type": "regression_stochastic",
+    "target": "next_day_return_with_residual_noise",
+    "residual_std": 0.014312
+  },
+  "model_4": {
+    "name": "Regime Switch Simulator",
+    "type": "classification_sampling",
+    "target": "direction_probability_with_empirical_return_sampling"
+  },
+  "predictions": {
+    "model_1_linear_trend": [
+      {
+        "date": "2026-03-30",
+        "predicted_close": 1349.82,
+        "predicted_return_pct": 0.128,
+        "trend": "UP",
+        "model_confidence": 55.75
+      },
+      {
+        "date": "2026-03-31",
+        "predicted_close": 1353.67,
+        "predicted_return_pct": 0.285,
+        "trend": "UP",
+        "model_confidence": 62.82
+      },
+      {
+        "date": "2026-04-01",
+        "predicted_close": 1357.63,
+        "predicted_return_pct": 0.292,
+        "trend": "UP",
+        "model_confidence": 63.16
+      },
+      {
+        "date": "2026-04-02",
+        "predicted_close": 1361.8,
+        "predicted_return_pct": 0.307,
+        "trend": "UP",
+        "model_confidence": 63.83
+      },
+      {
+        "date": "2026-04-03",
+        "predicted_close": 1366.15,
+        "predicted_return_pct": 0.32,
+        "trend": "UP",
+        "model_confidence": 64.38
+      },
+      {
+        "date": "2026-04-06",
+        "predicted_close": 1363.75,
+        "predicted_return_pct": -0.175,
+        "trend": "DOWN",
+        "model_confidence": 57.89
+      },
+      {
+        "date": "2026-04-07",
+        "predicted_close": 1361.51,
+        "predicted_return_pct": -0.164,
+        "trend": "DOWN",
+        "model_confidence": 57.4
+      },
+      {
+        "date": "2026-04-08",
+        "predicted_close": 1359.53,
+        "predicted_return_pct": -0.145,
+        "trend": "DOWN",
+        "model_confidence": 56.54
+      },
+      {
+        "date": "2026-04-09",
+        "predicted_close": 1357.72,
+        "predicted_return_pct": -0.133,
+        "trend": "DOWN",
+        "model_confidence": 55.99
+      },
+      {
+        "date": "2026-04-10",
+        "predicted_close": 1355.99,
+        "predicted_return_pct": -0.127,
+        "trend": "DOWN",
+        "model_confidence": 55.74
+      },
+      {
+        "date": "2026-04-13",
+        "predicted_close": 1354.04,
+        "predicted_return_pct": -0.144,
+        "trend": "DOWN",
+        "model_confidence": 56.48
+      },
+      {
+        "date": "2026-04-14",
+        "predicted_close": 1352.05,
+        "predicted_return_pct": -0.147,
+        "trend": "DOWN",
+        "model_confidence": 56.6
+      },
+      {
+        "date": "2026-04-15",
+        "predicted_close": 1350.05,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.67
+      },
+      {
+        "date": "2026-04-16",
+        "predicted_close": 1348.05,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.67
+      },
+      {
+        "date": "2026-04-17",
+        "predicted_close": 1346.06,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.64
+      },
+      {
+        "date": "2026-04-20",
+        "predicted_close": 1344.07,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-04-21",
+        "predicted_close": 1342.08,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-04-22",
+        "predicted_close": 1340.1,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.65
+      },
+      {
+        "date": "2026-04-23",
+        "predicted_close": 1338.12,
+        "predicted_return_pct": -0.147,
+        "trend": "DOWN",
+        "model_confidence": 56.64
+      },
+      {
+        "date": "2026-04-24",
+        "predicted_close": 1336.15,
+        "predicted_return_pct": -0.147,
+        "trend": "DOWN",
+        "model_confidence": 56.62
+      },
+      {
+        "date": "2026-04-27",
+        "predicted_close": 1334.18,
+        "predicted_return_pct": -0.147,
+        "trend": "DOWN",
+        "model_confidence": 56.63
+      },
+      {
+        "date": "2026-04-28",
+        "predicted_close": 1332.21,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.64
+      },
+      {
+        "date": "2026-04-29",
+        "predicted_close": 1330.24,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.65
+      },
+      {
+        "date": "2026-04-30",
+        "predicted_close": 1328.27,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-01",
+        "predicted_close": 1326.31,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-04",
+        "predicted_close": 1324.34,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-05",
+        "predicted_close": 1322.38,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-06",
+        "predicted_close": 1320.43,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-07",
+        "predicted_close": 1318.47,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      },
+      {
+        "date": "2026-05-08",
+        "predicted_close": 1316.52,
+        "predicted_return_pct": -0.148,
+        "trend": "DOWN",
+        "model_confidence": 56.66
+      }
+    ],
+    "model_2_logistic_trend": [
+      {
+        "date": "2026-03-30",
+        "predicted_close": 1347.29,
+        "predicted_return_pct": -0.06,
+        "trend": "DOWN",
+        "model_confidence": 52.89,
+        "probability_up_pct": 47.11
+      },
+      {
+        "date": "2026-03-31",
+        "predicted_close": 1347.99,
+        "predicted_return_pct": 0.052,
+        "trend": "UP",
+        "model_confidence": 52.38,
+        "probability_up_pct": 52.38
+      },
+      {
+        "date": "2026-04-01",
+        "predicted_close": 1348.93,
+        "predicted_return_pct": 0.07,
+        "trend": "UP",
+        "model_confidence": 53.24,
+        "probability_up_pct": 53.24
+      },
+      {
+        "date": "2026-04-02",
+        "predicted_close": 1350.18,
+        "predicted_return_pct": 0.093,
+        "trend": "UP",
+        "model_confidence": 54.32,
+        "probability_up_pct": 54.32
+      },
+      {
+        "date": "2026-04-03",
+        "predicted_close": 1351.74,
+        "predicted_return_pct": 0.116,
+        "trend": "UP",
+        "model_confidence": 55.4,
+        "probability_up_pct": 55.4
+      },
+      {
+        "date": "2026-04-06",
+        "predicted_close": 1352.02,
+        "predicted_return_pct": 0.021,
+        "trend": "UP",
+        "model_confidence": 50.91,
+        "probability_up_pct": 50.91
+      },
+      {
+        "date": "2026-04-07",
+        "predicted_close": 1352.23,
+        "predicted_return_pct": 0.016,
+        "trend": "UP",
+        "model_confidence": 50.68,
+        "probability_up_pct": 50.68
+      },
+      {
+        "date": "2026-04-08",
+        "predicted_close": 1352.43,
+        "predicted_return_pct": 0.015,
+        "trend": "UP",
+        "model_confidence": 50.63,
+        "probability_up_pct": 50.63
+      },
+      {
+        "date": "2026-04-09",
+        "predicted_close": 1352.62,
+        "predicted_return_pct": 0.014,
+        "trend": "UP",
+        "model_confidence": 50.6,
+        "probability_up_pct": 50.6
+      },
+      {
+        "date": "2026-04-10",
+        "predicted_close": 1352.81,
+        "predicted_return_pct": 0.014,
+        "trend": "UP",
+        "model_confidence": 50.59,
+        "probability_up_pct": 50.59
+      },
+      {
+        "date": "2026-04-13",
+        "predicted_close": 1352.99,
+        "predicted_return_pct": 0.013,
+        "trend": "UP",
+        "model_confidence": 50.57,
+        "probability_up_pct": 50.57
+      },
+      {
+        "date": "2026-04-14",
+        "predicted_close": 1353.16,
+        "predicted_return_pct": 0.013,
+        "trend": "UP",
+        "model_confidence": 50.56,
+        "probability_up_pct": 50.56
+      },
+      {
+        "date": "2026-04-15",
+        "predicted_close": 1353.34,
+        "predicted_return_pct": 0.013,
+        "trend": "UP",
+        "model_confidence": 50.54,
+        "probability_up_pct": 50.54
+      },
+      {
+        "date": "2026-04-16",
+        "predicted_close": 1353.51,
+        "predicted_return_pct": 0.012,
+        "trend": "UP",
+        "model_confidence": 50.52,
+        "probability_up_pct": 50.52
+      },
+      {
+        "date": "2026-04-17",
+        "predicted_close": 1353.67,
+        "predicted_return_pct": 0.012,
+        "trend": "UP",
+        "model_confidence": 50.5,
+        "probability_up_pct": 50.5
+      },
+      {
+        "date": "2026-04-20",
+        "predicted_close": 1353.83,
+        "predicted_return_pct": 0.012,
+        "trend": "UP",
+        "model_confidence": 50.49,
+        "probability_up_pct": 50.49
+      },
+      {
+        "date": "2026-04-21",
+        "predicted_close": 1353.98,
+        "predicted_return_pct": 0.011,
+        "trend": "UP",
+        "model_confidence": 50.47,
+        "probability_up_pct": 50.47
+      },
+      {
+        "date": "2026-04-22",
+        "predicted_close": 1354.13,
+        "predicted_return_pct": 0.011,
+        "trend": "UP",
+        "model_confidence": 50.45,
+        "probability_up_pct": 50.45
+      },
+      {
+        "date": "2026-04-23",
+        "predicted_close": 1354.27,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.43,
+        "probability_up_pct": 50.43
+      },
+      {
+        "date": "2026-04-24",
+        "predicted_close": 1354.4,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-04-27",
+        "predicted_close": 1354.54,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-04-28",
+        "predicted_close": 1354.67,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-04-29",
+        "predicted_close": 1354.81,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-04-30",
+        "predicted_close": 1354.94,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-01",
+        "predicted_close": 1355.08,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-04",
+        "predicted_close": 1355.21,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-05",
+        "predicted_close": 1355.35,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-06",
+        "predicted_close": 1355.49,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-07",
+        "predicted_close": 1355.62,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      },
+      {
+        "date": "2026-05-08",
+        "predicted_close": 1355.76,
+        "predicted_return_pct": 0.01,
+        "trend": "UP",
+        "model_confidence": 50.41,
+        "probability_up_pct": 50.41
+      }
+    ],
+    "model_3_linear_stochastic": [
+      {
+        "date": "2026-03-30",
+        "predicted_close": 1386.72,
+        "predicted_return_pct": 2.865,
+        "trend": "UP",
+        "model_confidence": 58.59
+      },
+      {
+        "date": "2026-03-31",
+        "predicted_close": 1413.61,
+        "predicted_return_pct": 1.939,
+        "trend": "UP",
+        "model_confidence": 62.14
+      },
+      {
+        "date": "2026-04-01",
+        "predicted_close": 1418.68,
+        "predicted_return_pct": 0.359,
+        "trend": "UP",
+        "model_confidence": 69.61
+      },
+      {
+        "date": "2026-04-02",
+        "predicted_close": 1418.73,
+        "predicted_return_pct": 0.003,
+        "trend": "UP",
+        "model_confidence": 71.51
+      },
+      {
+        "date": "2026-04-03",
+        "predicted_close": 1442.93,
+        "predicted_return_pct": 1.706,
+        "trend": "UP",
+        "model_confidence": 60.01
+      },
+      {
+        "date": "2026-04-06",
+        "predicted_close": 1418.01,
+        "predicted_return_pct": -1.727,
+        "trend": "DOWN",
+        "model_confidence": 65.65
+      },
+      {
+        "date": "2026-04-07",
+        "predicted_close": 1446.75,
+        "predicted_return_pct": 2.027,
+        "trend": "UP",
+        "model_confidence": 55.73
+      },
+      {
+        "date": "2026-04-08",
+        "predicted_close": 1413.06,
+        "predicted_return_pct": -2.329,
+        "trend": "DOWN",
+        "model_confidence": 60.27
+      },
+      {
+        "date": "2026-04-09",
+        "predicted_close": 1389.83,
+        "predicted_return_pct": -1.644,
+        "trend": "DOWN",
+        "model_confidence": 60.91
+      },
+      {
+        "date": "2026-04-10",
+        "predicted_close": 1402.9,
+        "predicted_return_pct": 0.941,
+        "trend": "UP",
+        "model_confidence": 68.43
+      },
+      {
+        "date": "2026-04-13",
+        "predicted_close": 1420.19,
+        "predicted_return_pct": 1.232,
+        "trend": "UP",
+        "model_confidence": 65.52
+      },
+      {
+        "date": "2026-04-14",
+        "predicted_close": 1474.69,
+        "predicted_return_pct": 3.838,
+        "trend": "UP",
+        "model_confidence": 44.95
+      },
+      {
+        "date": "2026-04-15",
+        "predicted_close": 1444.58,
+        "predicted_return_pct": -2.042,
+        "trend": "DOWN",
+        "model_confidence": 63.03
+      },
+      {
+        "date": "2026-04-16",
+        "predicted_close": 1405.27,
+        "predicted_return_pct": -2.721,
+        "trend": "DOWN",
+        "model_confidence": 55.98
+      },
+      {
+        "date": "2026-04-17",
+        "predicted_close": 1411.05,
+        "predicted_return_pct": 0.411,
+        "trend": "UP",
+        "model_confidence": 71.07
+      },
+      {
+        "date": "2026-04-20",
+        "predicted_close": 1444.03,
+        "predicted_return_pct": 2.337,
+        "trend": "UP",
+        "model_confidence": 57.86
+      },
+      {
+        "date": "2026-04-21",
+        "predicted_close": 1429.57,
+        "predicted_return_pct": -1.002,
+        "trend": "DOWN",
+        "model_confidence": 66.12
+      },
+      {
+        "date": "2026-04-22",
+        "predicted_close": 1422.94,
+        "predicted_return_pct": -0.464,
+        "trend": "DOWN",
+        "model_confidence": 68.56
+      },
+      {
+        "date": "2026-04-23",
+        "predicted_close": 1398.56,
+        "predicted_return_pct": -1.714,
+        "trend": "DOWN",
+        "model_confidence": 59.38
+      },
+      {
+        "date": "2026-04-24",
+        "predicted_close": 1370.04,
+        "predicted_return_pct": -2.039,
+        "trend": "DOWN",
+        "model_confidence": 55.2
+      },
+      {
+        "date": "2026-04-27",
+        "predicted_close": 1370.67,
+        "predicted_return_pct": 0.046,
+        "trend": "UP",
+        "model_confidence": 65.62
+      },
+      {
+        "date": "2026-04-28",
+        "predicted_close": 1376.8,
+        "predicted_return_pct": 0.447,
+        "trend": "UP",
+        "model_confidence": 68.55
+      },
+      {
+        "date": "2026-04-29",
+        "predicted_close": 1422.51,
+        "predicted_return_pct": 3.32,
+        "trend": "UP",
+        "model_confidence": 54.55
+      },
+      {
+        "date": "2026-04-30",
+        "predicted_close": 1409.12,
+        "predicted_return_pct": -0.941,
+        "trend": "DOWN",
+        "model_confidence": 63.94
+      },
+      {
+        "date": "2026-05-01",
+        "predicted_close": 1387.49,
+        "predicted_return_pct": -1.535,
+        "trend": "DOWN",
+        "model_confidence": 59.57
+      },
+      {
+        "date": "2026-05-04",
+        "predicted_close": 1381.74,
+        "predicted_return_pct": -0.414,
+        "trend": "DOWN",
+        "model_confidence": 65.65
+      },
+      {
+        "date": "2026-05-05",
+        "predicted_close": 1394.93,
+        "predicted_return_pct": 0.954,
+        "trend": "UP",
+        "model_confidence": 69.6
+      },
+      {
+        "date": "2026-05-06",
+        "predicted_close": 1400.75,
+        "predicted_return_pct": 0.417,
+        "trend": "UP",
+        "model_confidence": 71.71
+      },
+      {
+        "date": "2026-05-07",
+        "predicted_close": 1399.59,
+        "predicted_return_pct": -0.083,
+        "trend": "DOWN",
+        "model_confidence": 70.05
+      },
+      {
+        "date": "2026-05-08",
+        "predicted_close": 1443.19,
+        "predicted_return_pct": 3.115,
+        "trend": "UP",
+        "model_confidence": 51.43
+      }
+    ],
+    "model_4_regime_switch": [
+      {
+        "date": "2026-03-30",
+        "predicted_close": 1334.78,
+        "predicted_return_pct": -0.988,
+        "trend": "DOWN",
+        "model_confidence": 52.89,
+        "probability_up_pct": 47.11
+      },
+      {
+        "date": "2026-03-31",
+        "predicted_close": 1323.59,
+        "predicted_return_pct": -0.839,
+        "trend": "DOWN",
+        "model_confidence": 51.21,
+        "probability_up_pct": 51.21
+      },
+      {
+        "date": "2026-04-01",
+        "predicted_close": 1329.85,
+        "predicted_return_pct": 0.473,
+        "trend": "UP",
+        "model_confidence": 51.91,
+        "probability_up_pct": 51.91
+      },
+      {
+        "date": "2026-04-02",
+        "predicted_close": 1302.18,
+        "predicted_return_pct": -2.08,
+        "trend": "DOWN",
+        "model_confidence": 54.69,
+        "probability_up_pct": 54.69
+      },
+      {
+        "date": "2026-04-03",
+        "predicted_close": 1286.47,
+        "predicted_return_pct": -1.207,
+        "trend": "DOWN",
+        "model_confidence": 52.96,
+        "probability_up_pct": 52.96
+      },
+      {
+        "date": "2026-04-06",
+        "predicted_close": 1294.61,
+        "predicted_return_pct": 0.632,
+        "trend": "UP",
+        "model_confidence": 50.84,
+        "probability_up_pct": 50.84
+      },
+      {
+        "date": "2026-04-07",
+        "predicted_close": 1287.91,
+        "predicted_return_pct": -0.517,
+        "trend": "DOWN",
+        "model_confidence": 53.23,
+        "probability_up_pct": 53.23
+      },
+      {
+        "date": "2026-04-08",
+        "predicted_close": 1299.12,
+        "predicted_return_pct": 0.871,
+        "trend": "UP",
+        "model_confidence": 52.11,
+        "probability_up_pct": 52.11
+      },
+      {
+        "date": "2026-04-09",
+        "predicted_close": 1293.12,
+        "predicted_return_pct": -0.462,
+        "trend": "DOWN",
+        "model_confidence": 54.55,
+        "probability_up_pct": 54.55
+      },
+      {
+        "date": "2026-04-10",
+        "predicted_close": 1301.12,
+        "predicted_return_pct": 0.618,
+        "trend": "UP",
+        "model_confidence": 51.89,
+        "probability_up_pct": 51.89
+      },
+      {
+        "date": "2026-04-13",
+        "predicted_close": 1335.2,
+        "predicted_return_pct": 2.62,
+        "trend": "UP",
+        "model_confidence": 52.09,
+        "probability_up_pct": 52.09
+      },
+      {
+        "date": "2026-04-14",
+        "predicted_close": 1370.79,
+        "predicted_return_pct": 2.665,
+        "trend": "UP",
+        "model_confidence": 55.53,
+        "probability_up_pct": 55.53
+      },
+      {
+        "date": "2026-04-15",
+        "predicted_close": 1350.05,
+        "predicted_return_pct": -1.513,
+        "trend": "DOWN",
+        "model_confidence": 55.42,
+        "probability_up_pct": 55.42
+      },
+      {
+        "date": "2026-04-16",
+        "predicted_close": 1341.22,
+        "predicted_return_pct": -0.654,
+        "trend": "DOWN",
+        "model_confidence": 51.18,
+        "probability_up_pct": 51.18
+      },
+      {
+        "date": "2026-04-17",
+        "predicted_close": 1343.92,
+        "predicted_return_pct": 0.201,
+        "trend": "UP",
+        "model_confidence": 50.63,
+        "probability_up_pct": 50.63
+      },
+      {
+        "date": "2026-04-20",
+        "predicted_close": 1325.24,
+        "predicted_return_pct": -1.389,
+        "trend": "DOWN",
+        "model_confidence": 51.09,
+        "probability_up_pct": 51.09
+      },
+      {
+        "date": "2026-04-21",
+        "predicted_close": 1292.31,
+        "predicted_return_pct": -2.485,
+        "trend": "DOWN",
+        "model_confidence": 50.06,
+        "probability_up_pct": 50.06
+      },
+      {
+        "date": "2026-04-22",
+        "predicted_close": 1272.92,
+        "predicted_return_pct": -1.5,
+        "trend": "DOWN",
+        "model_confidence": 50.74,
+        "probability_up_pct": 49.26
+      },
+      {
+        "date": "2026-04-23",
+        "predicted_close": 1261.08,
+        "predicted_return_pct": -0.931,
+        "trend": "DOWN",
+        "model_confidence": 50.15,
+        "probability_up_pct": 49.85
+      },
+      {
+        "date": "2026-04-24",
+        "predicted_close": 1258.35,
+        "predicted_return_pct": -0.217,
+        "trend": "DOWN",
+        "model_confidence": 50.76,
+        "probability_up_pct": 50.76
+      },
+      {
+        "date": "2026-04-27",
+        "predicted_close": 1275.8,
+        "predicted_return_pct": 1.387,
+        "trend": "UP",
+        "model_confidence": 52.51,
+        "probability_up_pct": 52.51
+      },
+      {
+        "date": "2026-04-28",
+        "predicted_close": 1261.77,
+        "predicted_return_pct": -1.1,
+        "trend": "DOWN",
+        "model_confidence": 55.59,
+        "probability_up_pct": 55.59
+      },
+      {
+        "date": "2026-04-29",
+        "predicted_close": 1248.75,
+        "predicted_return_pct": -1.032,
+        "trend": "DOWN",
+        "model_confidence": 51.86,
+        "probability_up_pct": 51.86
+      },
+      {
+        "date": "2026-04-30",
+        "predicted_close": 1238.22,
+        "predicted_return_pct": -0.843,
+        "trend": "DOWN",
+        "model_confidence": 50.99,
+        "probability_up_pct": 50.99
+      },
+      {
+        "date": "2026-05-01",
+        "predicted_close": 1218.09,
+        "predicted_return_pct": -1.626,
+        "trend": "DOWN",
+        "model_confidence": 50.65,
+        "probability_up_pct": 50.65
+      },
+      {
+        "date": "2026-05-04",
+        "predicted_close": 1208.09,
+        "predicted_return_pct": -0.82,
+        "trend": "DOWN",
+        "model_confidence": 50.16,
+        "probability_up_pct": 49.84
+      },
+      {
+        "date": "2026-05-05",
+        "predicted_close": 1234.57,
+        "predicted_return_pct": 2.192,
+        "trend": "UP",
+        "model_confidence": 50.76,
+        "probability_up_pct": 50.76
+      },
+      {
+        "date": "2026-05-06",
+        "predicted_close": 1260.67,
+        "predicted_return_pct": 2.114,
+        "trend": "UP",
+        "model_confidence": 55.92,
+        "probability_up_pct": 55.92
+      },
+      {
+        "date": "2026-05-07",
+        "predicted_close": 1244.31,
+        "predicted_return_pct": -1.298,
+        "trend": "DOWN",
+        "model_confidence": 56.66,
+        "probability_up_pct": 56.66
+      },
+      {
+        "date": "2026-05-08",
+        "predicted_close": 1246.41,
+        "predicted_return_pct": 0.169,
+        "trend": "UP",
+        "model_confidence": 52.61,
+        "probability_up_pct": 52.61
+      }
+    ]
+  }
+}

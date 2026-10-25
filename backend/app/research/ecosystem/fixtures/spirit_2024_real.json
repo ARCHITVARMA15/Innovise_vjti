@@ -1,0 +1,391 @@
+{
+  "entities": [
+    {
+      "id": "spirit",
+      "name": "Spirit AeroSystems Holdings, Inc.",
+      "ticker": "SPR",
+      "aliases": [
+        "Spirit AeroSystems",
+        "Spirit",
+        "Spirit AeroSystems Holdings"
+      ],
+      "jurisdiction": "United States",
+      "external_ids": {
+        "SEC_CIK": "0001364885"
+      }
+    },
+    {
+      "id": "boeing",
+      "name": "The Boeing Company",
+      "ticker": "BA",
+      "aliases": [
+        "Boeing"
+      ],
+      "jurisdiction": "United States",
+      "external_ids": {
+        "SEC_CIK": "0000012927"
+      }
+    },
+    {
+      "id": "airbus",
+      "name": "Airbus SE",
+      "ticker": "AIR",
+      "aliases": [
+        "Airbus"
+      ],
+      "jurisdiction": "Netherlands",
+      "external_ids": {}
+    }
+  ],
+  "sources": [
+    {
+      "id": "spirit-10k24",
+      "title": "Spirit FY2024 Form 10-K \u2014 concentration and liquidity",
+      "url": "https://www.sec.gov/Archives/edgar/data/1364885/000162828025009088/spr-20241231.htm",
+      "publisher": "Spirit AeroSystems / SEC EDGAR",
+      "published_at": "2025-02-28",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Customer concentration; Note 2 Basis of Presentation; liquidity (curated summary, not a verbatim extract)",
+      "document_version": "Spirit FY2024 Form 10-K \u2014 concentration and liquidity",
+      "kind": "official",
+      "text": "Curated summary: Boeing and Airbus generated approximately 58% and 21% of Spirit consolidated FY2024 net revenue, respectively. These are Spirit customer revenue shares, not Boeing or Airbus procurement shares. Spirit disclosed substantial doubt about its ability to continue as a going concern. Debt at December 31, 2024 was USD 4,394.2 million, including 424.5 million short-term. The Boeing merger announced June 30, 2024 remained pending at this historical cutoff. The Boeing IAM strike was resolved November 4, 2024.",
+      "assertions": [
+        "spirit-boeing|spirit|boeing|customer",
+        "spirit-airbus|spirit|airbus|customer",
+        "attributes:spirit-boeing",
+        "attributes:spirit-airbus",
+        "customer_revenue_share:spirit-boeing|2024-01-01|2024-12-31|58",
+        "customer_revenue_share:spirit-airbus|2024-01-01|2024-12-31|21",
+        "going_concern:spirit",
+        "event:spirit-boeing"
+      ]
+    },
+    {
+      "id": "spirit-results24",
+      "title": "Spirit FY2024 results \u2014 financial statements",
+      "url": "https://www.sec.gov/Archives/edgar/data/1364885/000162828025009058/spr_20250228-8kex99.htm",
+      "publisher": "Spirit AeroSystems / SEC EDGAR",
+      "published_at": "2025-02-28",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Consolidated statements of operations, balance sheets, cash flows; Q4 developments (unaudited earnings release, curated numerical transcription)",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "kind": "official",
+      "text": "FY2024, consolidated USD millions: revenue 6316.6; net loss including noncontrolling interests -2139.0; operating cash flow -1120.9. At December 31, 2024: cash and cash equivalents 537.0; current assets 3760.5; current liabilities 3567.4; total equity including noncontrolling interests -2616.0. Common-shareholder net loss was -2139.8 and stockholders equity excluding noncontrolling interests was -2621.5; these alternative bases are not used in the ratios. Q4 funding: Boeing agreed advances up to 350 and Airbus a credit line up to 107; 200 and 70 respectively had been advanced at year end. These are liquidity support, not revenue or compensation for a quantified strike loss.",
+      "assertions": [
+        "attributes:spirit-boeing",
+        "attributes:spirit-airbus"
+      ]
+    },
+    {
+      "id": "spirit-strike24",
+      "title": "Spirit Q3 2024 results \u2014 Boeing strike response",
+      "url": "https://investor.spiritaero.com/files/doc_earnings/2024/q3/earnings-result/SPR_2024-Q3-Press-Release_Final.pdf",
+      "publisher": "Spirit AeroSystems",
+      "published_at": "2024-10-23",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Page 1, Impact of Boeing IAM Strike (curated summary)",
+      "document_version": "Spirit Q3 2024 results \u2014 Boeing strike response",
+      "kind": "official",
+      "text": "In response to the Boeing IAM strike that began September 13, 2024, Spirit announced a 21-day furlough for approximately 700 employees on the 767 and 777 programs, citing inventory buildup. It also announced a hiring freeze and travel and overtime restrictions. This is a documented announcement of operational measures, not a measured revenue loss.",
+      "assertions": [
+        "event:spirit-boeing",
+        "observed_impact:spirit-boeing"
+      ]
+    },
+    {
+      "id": "boeing-results24",
+      "title": "Boeing FY2024 results",
+      "url": "https://investors.boeing.com/investors/news/press-release-details/2025/Boeing-Reports-Fourth-Quarter-Results/default.aspx",
+      "publisher": "The Boeing Company",
+      "published_at": "2025-01-28",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Full-year GAAP results and cash flows (curated numerical transcription)",
+      "document_version": "Boeing FY2024 results",
+      "kind": "official",
+      "text": "FY2024 consolidated USD millions: net loss -11829; operating cash flow -12080. Boeing reported impacts of the IAM work stoppage and agreement. These company-wide losses are not attributed solely to the strike or to Spirit.",
+      "assertions": [
+        "attributes:spirit-boeing",
+        "attributes:spirit-airbus"
+      ]
+    },
+    {
+      "id": "airbus-results24",
+      "title": "Airbus FY2024 results",
+      "url": "https://www.airbus.com/en/newsroom/press-releases/2025-02-airbus-reports-full-year-fy-2024-results",
+      "publisher": "Airbus SE",
+      "published_at": "2025-02-20",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Full-year consolidated results (curated numerical transcription)",
+      "document_version": "Airbus FY2024 results",
+      "kind": "official",
+      "text": "FY2024 consolidated EUR millions: revenue 69230; net income attributable to equity owners 4232; free cash flow 4461. Positive earnings alone do not establish low risk. EUR figures are not added to USD figures.",
+      "assertions": [
+        "attributes:spirit-boeing",
+        "attributes:spirit-airbus"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "id": "spirit-boeing",
+      "source_entity_id": "spirit",
+      "target_entity_id": "boeing",
+      "relationship_type": "customer",
+      "source_ids": [
+        "spirit-10k24"
+      ],
+      "excerpt": "Boeing and Airbus generated approximately 58% and 21% of Spirit consolidated FY2024 net revenue, respectively.",
+      "last_confirmed": "2024-12-31",
+      "attribute_source_ids": [
+        "spirit-10k24",
+        "spirit-results24"
+      ],
+      "dependency_percent": "58",
+      "dependency_basis": "Approximate share of Spirit consolidated FY2024 net revenue; not counterparty procurement share or an exact customer revenue amount.",
+      "dependency_period_end": "2024-12-31",
+      "mitigants": [
+        "Year-end customer funding: Boeing USD 200 million drawn of up to 350 million advances. Liquidity support is not proof that all operating exposure is eliminated."
+      ],
+      "risk_event": "Historical Boeing IAM strike in September\u2013November 2024; the strike was over before this investigation cutoff.",
+      "event_source_ids": [
+        "spirit-strike24",
+        "spirit-10k24"
+      ],
+      "event_effective_to": "2024-11-04",
+      "observed_impact": "Spirit announced a 21-day furlough for approximately 700 employees on its 767/777 programs and other cost restrictions in response to the Boeing strike and inventory buildup. The release establishes the announcement, not a dollar amount of realized loss.",
+      "dependency_period_start": "2024-01-01"
+    },
+    {
+      "id": "spirit-airbus",
+      "source_entity_id": "spirit",
+      "target_entity_id": "airbus",
+      "relationship_type": "customer",
+      "source_ids": [
+        "spirit-10k24"
+      ],
+      "excerpt": "Boeing and Airbus generated approximately 58% and 21% of Spirit consolidated FY2024 net revenue, respectively.",
+      "last_confirmed": "2024-12-31",
+      "attribute_source_ids": [
+        "spirit-10k24",
+        "spirit-results24"
+      ],
+      "dependency_percent": "21",
+      "dependency_basis": "Approximate share of Spirit consolidated FY2024 net revenue; not counterparty procurement share or an exact customer revenue amount.",
+      "dependency_period_end": "2024-12-31",
+      "mitigants": [
+        "Year-end customer funding: Airbus USD 70 million drawn of up to 107 million credit line. Liquidity support is not proof that all operating exposure is eliminated."
+      ],
+      "dependency_period_start": "2024-01-01"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "spirit-2024-revenue",
+      "entity_id": "spirit",
+      "metric": "revenue",
+      "value": "6316.6",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-net_income",
+      "entity_id": "spirit",
+      "metric": "net_income",
+      "value": "-2139.0",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-operating_cash_flow",
+      "entity_id": "spirit",
+      "metric": "operating_cash_flow",
+      "value": "-1120.9",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-cash_and_equivalents",
+      "entity_id": "spirit",
+      "metric": "cash_and_equivalents",
+      "value": "537.0",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-current_assets",
+      "entity_id": "spirit",
+      "metric": "current_assets",
+      "value": "3760.5",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-current_liabilities",
+      "entity_id": "spirit",
+      "metric": "current_liabilities",
+      "value": "3567.4",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-total_equity",
+      "entity_id": "spirit",
+      "metric": "total_equity",
+      "value": "-2616.0",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 results \u2014 financial statements",
+      "source_id": "spirit-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "spirit-2024-total_debt",
+      "entity_id": "spirit",
+      "metric": "total_debt",
+      "value": "4394.2",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Spirit FY2024 Form 10-K \u2014 concentration and liquidity",
+      "source_id": "spirit-10k24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "boeing-2024-net_income",
+      "entity_id": "boeing",
+      "metric": "net_income",
+      "value": "-11829",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Boeing FY2024 results",
+      "source_id": "boeing-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "boeing-2024-operating_cash_flow",
+      "entity_id": "boeing",
+      "metric": "operating_cash_flow",
+      "value": "-12080",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Boeing FY2024 results",
+      "source_id": "boeing-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "airbus-2024-revenue",
+      "entity_id": "airbus",
+      "metric": "revenue",
+      "value": "69230",
+      "currency": "EUR",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Airbus FY2024 results",
+      "source_id": "airbus-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "airbus-2024-net_income",
+      "entity_id": "airbus",
+      "metric": "net_income",
+      "value": "4232",
+      "currency": "EUR",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated; net income attributable to equity owners",
+      "document_version": "Airbus FY2024 results",
+      "source_id": "airbus-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    },
+    {
+      "id": "airbus-2024-free_cash_flow",
+      "entity_id": "airbus",
+      "metric": "free_cash_flow",
+      "value": "4461",
+      "currency": "EUR",
+      "units": "millions",
+      "period": "FY2024",
+      "period_type": "duration",
+      "period_start": "2024-01-01",
+      "period_end": "2024-12-31",
+      "reporting_basis": "consolidated",
+      "document_version": "Airbus FY2024 results",
+      "source_id": "airbus-results24",
+      "provenance": "Curated primary disclosure transcription; see source inspector for location, reporting basis and publication date."
+    }
+  ]
+}

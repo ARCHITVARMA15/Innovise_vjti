@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g4)"/>
+  <path d="M220 500C280 410 360 360 470 360C580 360 660 410 720 500" stroke="white" stroke-opacity="0.5" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="470" cy="300" r="70" fill="white" fill-opacity="0.4"/>
+  <circle cx="730" cy="300" r="70" fill="white" fill-opacity="0.27"/>
+  <text x="330" y="585" fill="#0F172A" fill-opacity="0.75" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Investor Story</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C4B5FD"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g3)"/>
+  <circle cx="600" cy="320" r="160" fill="white" fill-opacity="0.32"/>
+  <rect x="510" y="220" width="180" height="220" rx="90" fill="#0F172A" fill-opacity="0.35"/>
+  <rect x="560" y="180" width="80" height="80" rx="40" fill="#0F172A" fill-opacity="0.35"/>
+  <text x="390" y="565" fill="#0F172A" fill-opacity="0.75" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Podcast Brief</text>
+</svg>

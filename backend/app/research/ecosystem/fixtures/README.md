@@ -1,0 +1,11 @@
+# Fixture provenance and permitted use
+
+`microsoft_demo.json` combines dated public facts with explicitly authored synthetic scenarios.
+
+- Microsoft–LinkedIn subsidiary affiliation: Microsoft FY2025 Exhibit 21, filed July 30, 2025, as of June 30, 2025: https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-ex21.htm
+- Microsoft consolidated FY2025 financial metrics: https://www.microsoft.com/investor/reports/ar25/index.html. Borrowings excluding leases are the derived sum 0 + 2,999 + 40,152 = 43,151 USD million; remaining figures retain their reported units and periods.
+- Northstar Silicon (Demo), Orchard Components (Demo), Meridian Logistics (Demo), their relationships, liquidity events, materiality attributes, mitigants and financial values are fictional. The authors dedicate those synthetic fixture portions to CC0-1.0. No claim of CC0 licensing or ownership is made over Microsoft/SEC reports or their branding; link to the original disclosures for context.
+
+The official source text is a short curated excerpt/financial transcription, not the complete filing. The saved hash fingerprints this local excerpt. Structured assertions in the fixture are curated application data; they are never extracted by obeying text instructions. An affiliation listing does not prove direct legal ownership, a guarantee or a financing obligation. Synthetic pathways always remain hypothetical and unresolved as real-world evidence.
+
+`spirit_2024_real.json` is an additional, nonsynthetic historical case with Spirit AeroSystems as target and Boeing/Airbus as customers. Source text is explicitly labelled curated summaries/numerical transcriptions, with original disclosure URLs, publication dates and locations. It contains no authored fictional companies or claimed exact strike-loss amount. Customer shares are approximate and refer to Spirit FY2024 consolidated revenue. See [case provenance and calculation definitions](../../../../../docs/spirit-real-evidence-case.md). No ownership or licensing claim is made over issuer disclosures. The historical strike response is distinguished from an active disruption. Boeing’s pending acquisition at the cutoff is not represented as completed ownership.

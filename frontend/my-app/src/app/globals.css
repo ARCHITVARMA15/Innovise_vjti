@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-black: #050810;
+  --color-brand-teal: #00e5cc;
+  --color-brand-gold: #C9A84C;
+  --color-brand-purple: #7c3aed;
+  --font-bebas: var(--font-bebas-neue);
+  --font-mono: var(--font-dm-mono);
+  --animate-shimmer: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('https://cdn.fontshare.com/wf/S7S7S7S7S7S7S7S7S7S7S7S7/CabinetGrotesk-Variable.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050810;
+  color: #ffffff;
+  overflow-x: hidden;
+  cursor: none;
+  font-family: 'Cabinet Grotesk', system-ui, sans-serif;
+}
+
+.char-split { display: inline-block; }
+
+.glass-nav {
+  background: rgba(5, 8, 16, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 229, 204, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 229, 204, 0.4);
+}
+
+#custom-cursor {
+  width: 8px;
+  height: 8px;
+  background: #00e5cc;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+#cursor-ring {
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 229, 204, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-scroll {
+  display: flex;
+  width: max-content;
+  animation: ticker 30s linear infinite;
+}
+
+.glow-teal:hover { box-shadow: 0 0 15px rgba(0, 229, 204, 0.4); transform: scale(1.05); }
+.glow-red:hover { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); transform: scale(1.05); }
+
+.pulse-dot { animation: pulse-anim 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulse-anim { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+
+.orbit-node {
+  animation: orbit 8s linear infinite;
+  animation-delay: var(--d);
+  transform-origin: center;
+  position: absolute;
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) translateX(var(--r)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(var(--r)) rotate(-360deg); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+.animate-spin-slow { animation: spin-slow 10s linear infinite; }
+.animate-spin-slow-reverse { animation: spin-slow-reverse 15s linear infinite; }
+
+/* ── Overview dashboard reset ── */
+.overview-root {
+  cursor: auto;
+  background-color: #f8f9ff;
+  color: #0b1c30;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  font-family: 'Material Symbols Outlined';
+}
+
+.ambient-cloud {
+  box-shadow: 0 24px 40px rgba(11, 28, 48, 0.05);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

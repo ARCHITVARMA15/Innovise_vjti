@@ -1,0 +1,22 @@
+SYNTHETIC TEST FIXTURE ONLY — not company research or UI fallback data.
+Entity: Synthetic Fixture Co
+Accounting scope/basis: consolidated / synthetic GAAP
+Total debt means interest-bearing short-term plus long-term borrowings, not total liabilities.
+
+FY2024 income statement: 2023-04-01 through 2024-03-31 (annual duration).
+FY2024 balance sheet: instant at 2024-03-31.
+Revenue INR crore 1000
+Net income INR crore 100
+Current assets INR crore 400
+Current liabilities INR crore 200
+Total debt INR crore 200
+Total equity INR crore 500
+
+FY2025 income statement: 2024-04-01 through 2025-03-31 (annual duration).
+FY2025 balance sheet: instant at 2025-03-31.
+Revenue INR crore 1100
+Net income INR crore 132
+Current assets INR crore 450
+Current liabilities INR crore 300
+Total debt INR crore 300
+Total equity INR crore 600

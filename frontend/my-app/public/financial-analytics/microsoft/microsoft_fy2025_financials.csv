@@ -1,0 +1,455 @@
+statement,metric,label,dimension,fiscal_year,period,period_type,start_date,end_date,value,unit,source_url,basis
+income,product_revenue,Product,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,63946,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,product_revenue,Product,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,64773,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,product_revenue,Product,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,64699,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_revenue,Service and other,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,217778,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_revenue,Service and other,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,180349,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_revenue,Service and other,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,147216,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,revenue,Total revenue,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,281724,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,revenue,Total revenue,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,245122,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,revenue,Total revenue,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,211915,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,product_cost,Product,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,13501,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,product_cost,Product,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,15272,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,product_cost,Product,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,17804,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_cost,Service and other,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,74330,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_cost,Service and other,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,58842,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,service_cost,Service and other,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,48059,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,cost_of_revenue,Total cost of revenue,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,87831,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,cost_of_revenue,Total cost of revenue,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,74114,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,cost_of_revenue,Total cost of revenue,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,65863,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,gross_profit,Gross margin,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,193893,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,gross_profit,Gross margin,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,171008,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,gross_profit,Gross margin,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,146052,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,research_development,Research and development,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,32488,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,research_development,Research and development,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,29510,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,research_development,Research and development,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,27195,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,sales_marketing,Sales and marketing,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,25654,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,sales_marketing,Sales and marketing,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,24456,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,sales_marketing,Sales and marketing,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,22759,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,general_administrative,General and administrative,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,7223,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,general_administrative,General and administrative,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,7609,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,general_administrative,General and administrative,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,7575,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,operating_income,Operating income,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,128528,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,operating_income,Operating income,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,109433,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,operating_income,Operating income,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,88523,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,other_income,"Other income (expense), net",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-4901,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,other_income,"Other income (expense), net",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-1646,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,other_income,"Other income (expense), net",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,788,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,pretax_income,Income before income taxes,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,123627,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,pretax_income,Income before income taxes,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,107787,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,pretax_income,Income before income taxes,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,89311,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,income_tax,Provision for income taxes,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,21795,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,income_tax,Provision for income taxes,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,19651,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,income_tax,Provision for income taxes,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,16950,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,net_income,Net income,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,101832,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,net_income,Net income,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,88136,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,net_income,Net income,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,72361,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_eps,Basic,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,13.7,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_eps,Basic,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,11.86,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_eps,Basic,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,9.72,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_eps,Diluted,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,13.64,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_eps,Diluted,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,11.8,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_eps,Diluted,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,9.68,USD/share,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_shares,Basic,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,7433,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_shares,Basic,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,7431,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,basic_shares,Basic,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,7446,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_shares,Diluted,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,7465,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_shares,Diluted,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,7469,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+income,diluted_shares,Diluted,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,7472,shares_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,cash,Cash and cash equivalents,Consolidated,2025,FY2025,instant,,2025-06-30,30242,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,cash,Cash and cash equivalents,Consolidated,2024,FY2024,instant,,2024-06-30,18315,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_investments,Short-term investments,Consolidated,2025,FY2025,instant,,2025-06-30,64323,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_investments,Short-term investments,Consolidated,2024,FY2024,instant,,2024-06-30,57228,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liquid_assets,"Total cash, cash equivalents, and short-term investments",Consolidated,2025,FY2025,instant,,2025-06-30,94565,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liquid_assets,"Total cash, cash equivalents, and short-term investments",Consolidated,2024,FY2024,instant,,2024-06-30,75543,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,receivables,"Accounts receivable, net of allowance for doubtful accounts of $944 and $830",Consolidated,2025,FY2025,instant,,2025-06-30,69905,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,receivables,"Accounts receivable, net of allowance for doubtful accounts of $944 and $830",Consolidated,2024,FY2024,instant,,2024-06-30,56924,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,inventories,Inventories,Consolidated,2025,FY2025,instant,,2025-06-30,938,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,inventories,Inventories,Consolidated,2024,FY2024,instant,,2024-06-30,1246,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_current_assets,Other current assets,Consolidated,2025,FY2025,instant,,2025-06-30,25723,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_current_assets,Other current assets,Consolidated,2024,FY2024,instant,,2024-06-30,26021,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_assets,Total current assets,Consolidated,2025,FY2025,instant,,2025-06-30,191131,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_assets,Total current assets,Consolidated,2024,FY2024,instant,,2024-06-30,159734,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,property_equipment,"Property and equipment, net of accumulated depreciation of $93,653 and $76,421",Consolidated,2025,FY2025,instant,,2025-06-30,204966,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,property_equipment,"Property and equipment, net of accumulated depreciation of $93,653 and $76,421",Consolidated,2024,FY2024,instant,,2024-06-30,135591,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,lease_assets,Operating lease right-of-use assets,Consolidated,2025,FY2025,instant,,2025-06-30,24823,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,lease_assets,Operating lease right-of-use assets,Consolidated,2024,FY2024,instant,,2024-06-30,18961,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,equity_investments,Equity and other investments,Consolidated,2025,FY2025,instant,,2025-06-30,15405,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,equity_investments,Equity and other investments,Consolidated,2024,FY2024,instant,,2024-06-30,14600,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,goodwill,Goodwill,Consolidated,2025,FY2025,instant,,2025-06-30,119509,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,goodwill,Goodwill,Consolidated,2024,FY2024,instant,,2024-06-30,119220,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,intangibles,"Intangible assets, net",Consolidated,2025,FY2025,instant,,2025-06-30,22604,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,intangibles,"Intangible assets, net",Consolidated,2024,FY2024,instant,,2024-06-30,27597,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_long_assets,Other long-term assets,Consolidated,2025,FY2025,instant,,2025-06-30,40565,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_long_assets,Other long-term assets,Consolidated,2024,FY2024,instant,,2024-06-30,36460,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,assets,Total assets,Consolidated,2025,FY2025,instant,,2025-06-30,619003,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,assets,Total assets,Consolidated,2024,FY2024,instant,,2024-06-30,512163,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,payables,Accounts payable,Consolidated,2025,FY2025,instant,,2025-06-30,27724,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,payables,Accounts payable,Consolidated,2024,FY2024,instant,,2024-06-30,21996,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_debt,Short-term debt,Consolidated,2025,FY2025,instant,,2025-06-30,0,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_debt,Short-term debt,Consolidated,2024,FY2024,instant,,2024-06-30,6693,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_long_debt,Current portion of long-term debt,Consolidated,2025,FY2025,instant,,2025-06-30,2999,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_long_debt,Current portion of long-term debt,Consolidated,2024,FY2024,instant,,2024-06-30,2249,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,accrued_compensation,Accrued compensation,Consolidated,2025,FY2025,instant,,2025-06-30,13709,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,accrued_compensation,Accrued compensation,Consolidated,2024,FY2024,instant,,2024-06-30,12564,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_tax,Short-term income taxes,Consolidated,2025,FY2025,instant,,2025-06-30,7211,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_tax,Short-term income taxes,Consolidated,2024,FY2024,instant,,2024-06-30,5017,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_unearned_revenue,Short-term unearned revenue,Consolidated,2025,FY2025,instant,,2025-06-30,64555,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,short_unearned_revenue,Short-term unearned revenue,Consolidated,2024,FY2024,instant,,2024-06-30,57582,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_current_liabilities,Other current liabilities,Consolidated,2025,FY2025,instant,,2025-06-30,25020,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_current_liabilities,Other current liabilities,Consolidated,2024,FY2024,instant,,2024-06-30,19185,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_liabilities,Total current liabilities,Consolidated,2025,FY2025,instant,,2025-06-30,141218,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,current_liabilities,Total current liabilities,Consolidated,2024,FY2024,instant,,2024-06-30,125286,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_debt,Long-term debt,Consolidated,2025,FY2025,instant,,2025-06-30,40152,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_debt,Long-term debt,Consolidated,2024,FY2024,instant,,2024-06-30,42688,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_tax,Long-term income taxes,Consolidated,2025,FY2025,instant,,2025-06-30,25986,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_tax,Long-term income taxes,Consolidated,2024,FY2024,instant,,2024-06-30,27931,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_unearned_revenue,Long-term unearned revenue,Consolidated,2025,FY2025,instant,,2025-06-30,2710,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,long_unearned_revenue,Long-term unearned revenue,Consolidated,2024,FY2024,instant,,2024-06-30,2602,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,deferred_tax,Deferred income taxes,Consolidated,2025,FY2025,instant,,2025-06-30,2835,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,deferred_tax,Deferred income taxes,Consolidated,2024,FY2024,instant,,2024-06-30,2618,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,lease_liabilities,Operating lease liabilities,Consolidated,2025,FY2025,instant,,2025-06-30,17437,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,lease_liabilities,Operating lease liabilities,Consolidated,2024,FY2024,instant,,2024-06-30,15497,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_long_liabilities,Other long-term liabilities,Consolidated,2025,FY2025,instant,,2025-06-30,45186,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_long_liabilities,Other long-term liabilities,Consolidated,2024,FY2024,instant,,2024-06-30,27064,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liabilities,Total liabilities,Consolidated,2025,FY2025,instant,,2025-06-30,275524,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liabilities,Total liabilities,Consolidated,2024,FY2024,instant,,2024-06-30,243686,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,paid_capital,"Common stock and paid-in capital – shares authorized 24,000; outstanding 7,434 and 7,434",Consolidated,2025,FY2025,instant,,2025-06-30,109095,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,paid_capital,"Common stock and paid-in capital – shares authorized 24,000; outstanding 7,434 and 7,434",Consolidated,2024,FY2024,instant,,2024-06-30,100923,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,retained_earnings,Retained earnings,Consolidated,2025,FY2025,instant,,2025-06-30,237731,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,retained_earnings,Retained earnings,Consolidated,2024,FY2024,instant,,2024-06-30,173144,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_comprehensive_loss,Accumulated other comprehensive loss,Consolidated,2025,FY2025,instant,,2025-06-30,-3347,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,other_comprehensive_loss,Accumulated other comprehensive loss,Consolidated,2024,FY2024,instant,,2024-06-30,-5590,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,equity,Total stockholders’ equity,Consolidated,2025,FY2025,instant,,2025-06-30,343479,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,equity,Total stockholders’ equity,Consolidated,2024,FY2024,instant,,2024-06-30,268477,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liabilities_equity,Total liabilities and stockholders’ equity,Consolidated,2025,FY2025,instant,,2025-06-30,619003,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+balance,liabilities_equity,Total liabilities and stockholders’ equity,Consolidated,2024,FY2024,instant,,2024-06-30,512163,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,net_income,Net income,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,101832,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,net_income,Net income,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,88136,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,net_income,Net income,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,72361,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,depreciation_other,"Depreciation, amortization, and other",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,34153,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,depreciation_other,"Depreciation, amortization, and other",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,22287,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,depreciation_other,"Depreciation, amortization, and other",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,13861,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_compensation,Stock-based compensation expense,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,11974,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_compensation,Stock-based compensation expense,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,10734,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_compensation,Stock-based compensation expense,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,9611,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_losses,Net recognized losses on investments and derivatives,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,609,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_losses,Net recognized losses on investments and derivatives,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,305,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_losses,Net recognized losses on investments and derivatives,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,196,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,deferred_tax,Deferred income taxes,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-7056,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,deferred_tax,Deferred income taxes,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-4738,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,deferred_tax,Deferred income taxes,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-6059,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,receivables_change,Accounts receivable,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-10581,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,receivables_change,Accounts receivable,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-7191,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,receivables_change,Accounts receivable,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-4087,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,inventory_change,Inventories,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,309,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,inventory_change,Inventories,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,1284,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,inventory_change,Inventories,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,1242,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_assets_change,Other current assets,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-3044,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_assets_change,Other current assets,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-1648,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_assets_change,Other current assets,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-1991,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_assets_change,Other long-term assets,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-2950,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_assets_change,Other long-term assets,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-6817,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_assets_change,Other long-term assets,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-2833,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,payables_change,Accounts payable,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,569,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,payables_change,Accounts payable,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,3545,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,payables_change,Accounts payable,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-2721,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,unearned_revenue_change,Unearned revenue,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,5438,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,unearned_revenue_change,Unearned revenue,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,5348,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,unearned_revenue_change,Unearned revenue,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,5535,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,tax_change,Income taxes,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-38,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,tax_change,Income taxes,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,1687,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,tax_change,Income taxes,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-358,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_liabilities_change,Other current liabilities,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,5922,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_liabilities_change,Other current liabilities,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,4867,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_current_liabilities_change,Other current liabilities,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,2272,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_liabilities_change,Other long-term liabilities,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-975,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_liabilities_change,Other long-term liabilities,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,749,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,other_long_liabilities_change,Other long-term liabilities,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,553,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,operating_cash,Net cash from operations,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,136162,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,operating_cash,Net cash from operations,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,118548,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,operating_cash,Net cash from operations,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,87582,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,short_debt_change,"Proceeds from issuance (repayments) of debt, maturities of 90 days or less, net",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-5746,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,short_debt_change,"Proceeds from issuance (repayments) of debt, maturities of 90 days or less, net",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,5250,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,short_debt_change,"Proceeds from issuance (repayments) of debt, maturities of 90 days or less, net",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,0,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_issued,Proceeds from issuance of debt,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,0,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_issued,Proceeds from issuance of debt,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,24395,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_issued,Proceeds from issuance of debt,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,0,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_repaid,Repayments of debt,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-3216,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_repaid,Repayments of debt,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-29070,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,debt_repaid,Repayments of debt,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-2750,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_issued,Common stock issued,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,2056,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_issued,Common stock issued,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,2002,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,stock_issued,Common stock issued,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,1866,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,buybacks,Common stock repurchased,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-18420,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,buybacks,Common stock repurchased,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-17254,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,buybacks,Common stock repurchased,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-22245,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,dividends,Common stock cash dividends paid,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-24082,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,dividends,Common stock cash dividends paid,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-21771,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,dividends,Common stock cash dividends paid,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-19800,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_other,"Other, net",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-2291,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_other,"Other, net",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-1309,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_other,"Other, net",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-1006,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_cash,Net cash used in financing,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-51699,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_cash,Net cash used in financing,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-37757,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,financing_cash,Net cash used in financing,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-43935,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,capex,Additions to property and equipment,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-64551,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,capex,Additions to property and equipment,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-44477,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,capex,Additions to property and equipment,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-28107,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,acquisitions,"Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-5978,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,acquisitions,"Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-69132,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,acquisitions,"Acquisition of companies, net of cash acquired and divestitures, and purchases of intangible and other assets",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-1670,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_purchases,Purchases of investments,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-29775,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_purchases,Purchases of investments,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-17732,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_purchases,Purchases of investments,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-37651,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_maturities,Maturities of investments,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,16079,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_maturities,Maturities of investments,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,24775,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_maturities,Maturities of investments,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,33510,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_sales,Sales of investments,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,9309,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_sales,Sales of investments,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,10894,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investment_sales,Sales of investments,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,14354,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_other,"Other, net",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,2317,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_other,"Other, net",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-1298,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_other,"Other, net",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-3116,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_cash,Net cash used in investing,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,-72599,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_cash,Net cash used in investing,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-96970,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,investing_cash,Net cash used in investing,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-22680,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,fx_effect,Effect of foreign exchange rates on cash and cash equivalents,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,63,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,fx_effect,Effect of foreign exchange rates on cash and cash equivalents,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-210,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,fx_effect,Effect of foreign exchange rates on cash and cash equivalents,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,-194,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,cash_change,Net change in cash and cash equivalents,Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,11927,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,cash_change,Net change in cash and cash equivalents,Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,-16389,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,cash_change,Net change in cash and cash equivalents,Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,20773,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,beginning_cash,"Cash and cash equivalents, beginning of period",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,18315,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,beginning_cash,"Cash and cash equivalents, beginning of period",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,34704,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,beginning_cash,"Cash and cash equivalents, beginning of period",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,13931,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,ending_cash,"Cash and cash equivalents, end of period",Consolidated,2025,FY2025,annual,2024-07-01,2025-06-30,30242,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,ending_cash,"Cash and cash equivalents, end of period",Consolidated,2024,FY2024,annual,2023-07-01,2024-06-30,18315,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cash,ending_cash,"Cash and cash equivalents, end of period",Consolidated,2023,FY2023,annual,2022-07-01,2023-06-30,34704,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Productivity and Business Processes,2025,FY2025,annual,2024-07-01,2025-06-30,120810,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Productivity and Business Processes,2024,FY2024,annual,2023-07-01,2024-06-30,106820,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Productivity and Business Processes,2023,FY2023,annual,2022-07-01,2023-06-30,94151,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Productivity and Business Processes,2025,FY2025,annual,2024-07-01,2025-06-30,22422,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Productivity and Business Processes,2024,FY2024,annual,2023-07-01,2024-06-30,19611,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Productivity and Business Processes,2023,FY2023,annual,2022-07-01,2023-06-30,17202,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Productivity and Business Processes,2025,FY2025,annual,2024-07-01,2025-06-30,28615,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Productivity and Business Processes,2024,FY2024,annual,2023-07-01,2024-06-30,27548,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Productivity and Business Processes,2023,FY2023,annual,2022-07-01,2023-06-30,26875,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Productivity and Business Processes,2025,FY2025,annual,2024-07-01,2025-06-30,69773,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Productivity and Business Processes,2024,FY2024,annual,2023-07-01,2024-06-30,59661,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Productivity and Business Processes,2023,FY2023,annual,2022-07-01,2023-06-30,50074,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Intelligent Cloud,2025,FY2025,annual,2024-07-01,2025-06-30,106265,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Intelligent Cloud,2024,FY2024,annual,2023-07-01,2024-06-30,87464,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,Intelligent Cloud,2023,FY2023,annual,2022-07-01,2023-06-30,72944,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Intelligent Cloud,2025,FY2025,annual,2024-07-01,2025-06-30,40171,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Intelligent Cloud,2024,FY2024,annual,2023-07-01,2024-06-30,29611,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,Intelligent Cloud,2023,FY2023,annual,2022-07-01,2023-06-30,24109,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Intelligent Cloud,2025,FY2025,annual,2024-07-01,2025-06-30,21505,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Intelligent Cloud,2024,FY2024,annual,2023-07-01,2024-06-30,20040,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,Intelligent Cloud,2023,FY2023,annual,2022-07-01,2023-06-30,20424,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Intelligent Cloud,2025,FY2025,annual,2024-07-01,2025-06-30,44589,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Intelligent Cloud,2024,FY2024,annual,2023-07-01,2024-06-30,37813,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,Intelligent Cloud,2023,FY2023,annual,2022-07-01,2023-06-30,28411,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,More Personal Computing,2025,FY2025,annual,2024-07-01,2025-06-30,54649,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,More Personal Computing,2024,FY2024,annual,2023-07-01,2024-06-30,50838,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,revenue,Revenue,More Personal Computing,2023,FY2023,annual,2022-07-01,2023-06-30,44820,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,More Personal Computing,2025,FY2025,annual,2024-07-01,2025-06-30,25238,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,More Personal Computing,2024,FY2024,annual,2023-07-01,2024-06-30,24892,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,cost_of_revenue,Cost of revenue,More Personal Computing,2023,FY2023,annual,2022-07-01,2023-06-30,24552,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,More Personal Computing,2025,FY2025,annual,2024-07-01,2025-06-30,15245,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,More Personal Computing,2024,FY2024,annual,2023-07-01,2024-06-30,13987,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_expenses,Operating expenses,More Personal Computing,2023,FY2023,annual,2022-07-01,2023-06-30,10230,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,More Personal Computing,2025,FY2025,annual,2024-07-01,2025-06-30,14166,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,More Personal Computing,2024,FY2024,annual,2023-07-01,2024-06-30,11959,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+segments,operating_income,Operating Income,More Personal Computing,2023,FY2023,annual,2022-07-01,2023-06-30,10038,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,United States (a),United States,2025,FY2025,annual,2024-07-01,2025-06-30,144546,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,United States (a),United States,2024,FY2024,annual,2023-07-01,2024-06-30,124704,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,United States (a),United States,2023,FY2023,annual,2022-07-01,2023-06-30,106744,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,Other countries,Other countries,2025,FY2025,annual,2024-07-01,2025-06-30,137178,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,Other countries,Other countries,2024,FY2024,annual,2023-07-01,2024-06-30,120418,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+geography,revenue,Other countries,Other countries,2023,FY2023,annual,2022-07-01,2023-06-30,105171,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Server products and cloud services,Server products and cloud services,2025,FY2025,annual,2024-07-01,2025-06-30,98435,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Server products and cloud services,Server products and cloud services,2024,FY2024,annual,2023-07-01,2024-06-30,79828,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Server products and cloud services,Server products and cloud services,2023,FY2023,annual,2022-07-01,2023-06-30,65007,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Commercial products and cloud services,Microsoft 365 Commercial products and cloud services,2025,FY2025,annual,2024-07-01,2025-06-30,87767,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Commercial products and cloud services,Microsoft 365 Commercial products and cloud services,2024,FY2024,annual,2023-07-01,2024-06-30,76969,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Commercial products and cloud services,Microsoft 365 Commercial products and cloud services,2023,FY2023,annual,2022-07-01,2023-06-30,66949,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Gaming,Gaming,2025,FY2025,annual,2024-07-01,2025-06-30,23455,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Gaming,Gaming,2024,FY2024,annual,2023-07-01,2024-06-30,21503,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Gaming,Gaming,2023,FY2023,annual,2022-07-01,2023-06-30,15466,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,LinkedIn,LinkedIn,2025,FY2025,annual,2024-07-01,2025-06-30,17812,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,LinkedIn,LinkedIn,2024,FY2024,annual,2023-07-01,2024-06-30,16372,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,LinkedIn,LinkedIn,2023,FY2023,annual,2022-07-01,2023-06-30,14989,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Windows and Devices,Windows and Devices,2025,FY2025,annual,2024-07-01,2025-06-30,17314,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Windows and Devices,Windows and Devices,2024,FY2024,annual,2023-07-01,2024-06-30,17026,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Windows and Devices,Windows and Devices,2023,FY2023,annual,2022-07-01,2023-06-30,17147,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Search and news advertising,Search and news advertising,2025,FY2025,annual,2024-07-01,2025-06-30,13878,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Search and news advertising,Search and news advertising,2024,FY2024,annual,2023-07-01,2024-06-30,12306,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Search and news advertising,Search and news advertising,2023,FY2023,annual,2022-07-01,2023-06-30,12125,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Dynamics products and cloud services,Dynamics products and cloud services,2025,FY2025,annual,2024-07-01,2025-06-30,7827,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Dynamics products and cloud services,Dynamics products and cloud services,2024,FY2024,annual,2023-07-01,2024-06-30,6831,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Dynamics products and cloud services,Dynamics products and cloud services,2023,FY2023,annual,2022-07-01,2023-06-30,5796,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Enterprise and partner services,Enterprise and partner services,2025,FY2025,annual,2024-07-01,2025-06-30,7760,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Enterprise and partner services,Enterprise and partner services,2024,FY2024,annual,2023-07-01,2024-06-30,7594,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Enterprise and partner services,Enterprise and partner services,2023,FY2023,annual,2022-07-01,2023-06-30,7900,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Consumer products and cloud services,Microsoft 365 Consumer products and cloud services,2025,FY2025,annual,2024-07-01,2025-06-30,7404,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Consumer products and cloud services,Microsoft 365 Consumer products and cloud services,2024,FY2024,annual,2023-07-01,2024-06-30,6648,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Microsoft 365 Consumer products and cloud services,Microsoft 365 Consumer products and cloud services,2023,FY2023,annual,2022-07-01,2023-06-30,6417,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Other,Other,2025,FY2025,annual,2024-07-01,2025-06-30,72,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Other,Other,2024,FY2024,annual,2023-07-01,2024-06-30,45,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+offerings,revenue,Other,Other,2023,FY2023,annual,2022-07-01,2023-06-30,119,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cloud,revenue,Microsoft Cloud revenue,Microsoft Cloud (overlapping measure),2025,FY2025,annual,2024-07-01,2025-06-30,168900,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cloud,revenue,Microsoft Cloud revenue,Microsoft Cloud (overlapping measure),2024,FY2024,annual,2023-07-01,2024-06-30,137700,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+cloud,revenue,Microsoft Cloud revenue,Microsoft Cloud (overlapping measure),2023,FY2023,annual,2022-07-01,2023-06-30,111600,USD_millions,https://www.microsoft.com/investor/reports/ar25/index.html,reported
+quarterly,product_revenue,Product,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,15272,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,15535,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,50313,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,40982,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,65585,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,56517,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,3294,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,3531,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,16805,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,12771,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,20099,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,16302,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,45486,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,40215,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,7544,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,6659,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,5717,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,5187,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,1673,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,1474,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,30552,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,26895,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,other_income,"Other income (expense), net",Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,-283,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,other_income,"Other income (expense), net",Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,389,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,30269,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,27284,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,5602,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,4993,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,24667,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,22291,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,3.32,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,3.0,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,3.3,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,2.99,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,7433,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,7429,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2025,FY2025 Q1,quarter,2024-07-01,2024-09-30,7470,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2024,FY2024 Q1,quarter,2023-07-01,2023-09-30,7462,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,16219,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,18941,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,53413,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,43079,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,69632,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,62020,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,3856,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,5964,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,17943,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,13659,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,21799,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,19623,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,47833,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,42397,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,7917,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,7142,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,6440,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,6246,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,1823,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,1977,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,31653,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,27032,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,-2288,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,-506,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,29365,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,26526,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,5257,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,4656,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,24108,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,21870,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,3.24,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,2.94,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,3.23,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,2.93,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,7435,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,7432,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2025,FY2025 Q2,quarter,2024-10-01,2024-12-31,7468,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2024,FY2024 Q2,quarter,2023-10-01,2023-12-31,7468,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,15319,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,17080,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,54747,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,44778,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,70066,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,61858,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,3037,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,4339,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,18882,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,14166,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,21919,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,18505,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,48147,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,43353,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,8198,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,7653,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,6212,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,6207,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,1737,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,1912,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,32000,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,27581,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,-623,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,-854,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,31377,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,26727,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,5553,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,4788,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,25824,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,21939,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,3.47,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,2.95,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,3.46,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,2.94,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,7434,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,7431,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2025,FY2025 Q3,quarter,2025-01-01,2025-03-31,7461,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2024,FY2024 Q3,quarter,2024-01-01,2024-03-31,7472,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,17136,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,product_revenue,Product,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,13217,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,59305,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,service_revenue,Service and other,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,51510,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,76441,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,revenue,Total revenue,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,64727,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,3314,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,product_cost,Product,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,1438,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,20700,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,service_cost,Service and other,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,18246,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,24014,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,cost_of_revenue,Total cost of revenue,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,19684,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,52427,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,gross_profit,Gross margin,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,45043,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,8829,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,research_development,Research and development,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,8056,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,7285,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,sales_marketing,Sales and marketing,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,6816,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,1990,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,general_administrative,General and administrative,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,2246,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,34323,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,operating_income,Operating income,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,27925,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,-1707,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,other_income,"Other expense, net",Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,-675,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,32616,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,pretax_income,Income before income taxes,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,27250,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,5383,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,income_tax,Provision for income taxes,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,5214,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,27233,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,net_income,Net income,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,22036,USD_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,3.66,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,basic_eps,Basic,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,2.96,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,3.65,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,diluted_eps,Diluted,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,2.95,USD/share,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,7432,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,basic_shares,Basic,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,7433,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2025,FY2025 Q4,quarter,2025-04-01,2025-06-30,7461,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported
+quarterly,diluted_shares,Diluted,Consolidated,2024,FY2024 Q4,quarter,2024-04-01,2024-06-30,7472,shares_millions,https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast,reported

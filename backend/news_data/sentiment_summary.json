@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-03-29T02:36:32.162333+00:00",
+  "by_category": {
+    "equity": {
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 41,
+      "total": 41
+    },
+    "macro": {
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 4,
+      "total": 4
+    },
+    "crypto": {
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 1,
+      "total": 1
+    },
+    "commodity": {
+      "bullish": 0,
+      "bearish": 0,
+      "neutral": 4,
+      "total": 4
+    }
+  },
+  "by_ticker": {}
+}

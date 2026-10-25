@@ -1,0 +1,253 @@
+{
+  "investors": [
+    {
+      "id": "warren_buffett",
+      "name": "Warren Buffett",
+      "country": "USA",
+      "style": "Value Investing",
+      "bio": "Focuses on durable moats, strong cash flows, and long-term compounding.",
+      "image_url": "/learners/investors/warren_buffett.jpg",
+      "image_source": "Wikimedia Commons",
+      "image_license": "Add exact license after download",
+      "image_credit": "Add author attribution"
+    },
+    {
+      "id": "ray_dalio",
+      "name": "Ray Dalio",
+      "country": "USA",
+      "style": "Macro and Risk Parity",
+      "bio": "Uses macro cycles and diversification to reduce drawdowns.",
+      "image_url": "/learners/investors/ray_dalio.jpg",
+      "image_source": "Wikimedia Commons",
+      "image_license": "Add exact license after download",
+      "image_credit": "Add author attribution"
+    },
+    {
+      "id": "peter_lynch",
+      "name": "Peter Lynch",
+      "country": "USA",
+      "style": "Growth at Reasonable Price",
+      "bio": "Finds understandable growth businesses before broad market consensus.",
+      "image_url": "/learners/investors/peter_lynch.jpg",
+      "image_source": "Wikimedia Commons",
+      "image_license": "Add exact license after download",
+      "image_credit": "Add author attribution"
+    },
+    {
+      "id": "rakesh_jhunjhunwala",
+      "name": "Rakesh Jhunjhunwala",
+      "country": "India",
+      "style": "Conviction Investing",
+      "bio": "Backed scalable Indian businesses with conviction and patience.",
+      "image_url": "/learners/investors/rakesh_jhunjhunwala.jpg",
+      "image_source": "Wikimedia Commons or licensed press photo",
+      "image_license": "Add exact license after download",
+      "image_credit": "Add author attribution"
+    },
+    {
+      "id": "radhakishan_damani",
+      "name": "Radhakishan Damani",
+      "country": "India",
+      "style": "Value and Retail Compounders",
+      "bio": "Known for disciplined stock picking and deep understanding of consumer demand.",
+      "image_url": "/learners/investors/radhakishan_damani.jpg",
+      "image_source": "Licensed source",
+      "image_license": "Add exact license after download",
+      "image_credit": "Add author attribution"
+    }
+  ],
+  "resources": [
+    {
+      "id": "res_001",
+      "title": "Buffett on Circle of Competence",
+      "type": "video",
+      "investor_id": "warren_buffett",
+      "topics": ["circle of competence", "moat", "valuation"],
+      "level": "beginner",
+      "duration_minutes": 14,
+      "source": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=warren+buffett+circle+of+competence",
+      "summary": "Why staying inside your competence zone reduces permanent capital loss."
+    },
+    {
+      "id": "res_002",
+      "title": "The Intelligent Investor",
+      "type": "book",
+      "investor_id": "warren_buffett",
+      "topics": ["value investing", "margin of safety", "mr market"],
+      "level": "beginner",
+      "duration_minutes": 180,
+      "source": "Book",
+      "url": "https://en.wikipedia.org/wiki/The_Intelligent_Investor",
+      "summary": "Foundational value investing framework with a strong risk-first mindset."
+    },
+    {
+      "id": "res_003",
+      "title": "Dalio on Economic Machine",
+      "type": "video",
+      "investor_id": "ray_dalio",
+      "topics": ["macro", "debt cycle", "inflation"],
+      "level": "beginner",
+      "duration_minutes": 31,
+      "source": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=ray+dalio+how+the+economic+machine+works",
+      "summary": "A practical model for growth, inflation, and debt cycles."
+    },
+    {
+      "id": "res_004",
+      "title": "Principles",
+      "type": "book",
+      "investor_id": "ray_dalio",
+      "topics": ["decision making", "macro", "systems"],
+      "level": "intermediate",
+      "duration_minutes": 240,
+      "source": "Book",
+      "url": "https://en.wikipedia.org/wiki/Principles_(book)",
+      "summary": "A decision framework for uncertainty, risk, and structured thinking."
+    },
+    {
+      "id": "res_005",
+      "title": "Peter Lynch: One Up on Wall Street",
+      "type": "book",
+      "investor_id": "peter_lynch",
+      "topics": ["stock picking", "scuttlebutt", "growth"],
+      "level": "beginner",
+      "duration_minutes": 210,
+      "source": "Book",
+      "url": "https://en.wikipedia.org/wiki/One_Up_on_Wall_Street",
+      "summary": "How everyday observations can uncover strong growth companies early."
+    },
+    {
+      "id": "res_006",
+      "title": "Lynch on Finding Tenbaggers",
+      "type": "podcast",
+      "investor_id": "peter_lynch",
+      "topics": ["tenbagger", "earnings", "valuation"],
+      "level": "intermediate",
+      "duration_minutes": 42,
+      "source": "Podcast",
+      "url": "https://www.youtube.com/results?search_query=peter+lynch+tenbagger+interview",
+      "summary": "How Lynch separates durable growers from temporary momentum stories."
+    },
+    {
+      "id": "res_007",
+      "title": "Rakesh Jhunjhunwala Investment Story",
+      "type": "story",
+      "investor_id": "rakesh_jhunjhunwala",
+      "topics": ["conviction", "india", "portfolio concentration"],
+      "level": "beginner",
+      "duration_minutes": 12,
+      "source": "Investor Story",
+      "url": "https://www.youtube.com/results?search_query=rakesh+jhunjhunwala+investment+journey",
+      "summary": "A concise narrative on building conviction and compounding in Indian markets."
+    },
+    {
+      "id": "res_008",
+      "title": "Damani and Retail Compounding",
+      "type": "story",
+      "investor_id": "radhakishan_damani",
+      "topics": ["retail", "consumer demand", "india"],
+      "level": "intermediate",
+      "duration_minutes": 10,
+      "source": "Investor Story",
+      "url": "https://www.youtube.com/results?search_query=radhakishan+damani+investment+style",
+      "summary": "How long-term understanding of consumer businesses can build durable wealth."
+    },
+    {
+      "id": "res_009",
+      "title": "Buffett Annual Letters Highlights",
+      "type": "podcast",
+      "investor_id": "warren_buffett",
+      "topics": ["capital allocation", "governance", "long term"],
+      "level": "advanced",
+      "duration_minutes": 55,
+      "source": "Podcast",
+      "url": "https://www.youtube.com/results?search_query=warren+buffett+annual+letters+analysis",
+      "summary": "Learn practical capital allocation through commentary on shareholder letters."
+    },
+    {
+      "id": "res_010",
+      "title": "India Value Investing Masterclass",
+      "type": "video",
+      "investor_id": "rakesh_jhunjhunwala",
+      "topics": ["value investing", "india", "risk management"],
+      "level": "intermediate",
+      "duration_minutes": 28,
+      "source": "YouTube",
+      "url": "https://www.youtube.com/results?search_query=india+value+investing+masterclass",
+      "summary": "A practical Indian-market interpretation of value and risk discipline."
+    }
+  ],
+  "quiz_cards": [
+    {
+      "id": "quiz_001",
+      "question": "What does margin of safety primarily protect against?",
+      "options": [
+        "Taxation changes",
+        "Forecasting errors and uncertainty",
+        "Brokerage fees",
+        "Currency appreciation"
+      ],
+      "correct_index": 1,
+      "explanation": "Margin of safety provides a buffer when assumptions about value are wrong.",
+      "topic": "value investing",
+      "level": "beginner"
+    },
+    {
+      "id": "quiz_002",
+      "question": "Which investor approach emphasizes balancing uncorrelated assets?",
+      "options": [
+        "Scalping",
+        "Risk parity",
+        "Penny stock averaging",
+        "High-frequency arbitrage"
+      ],
+      "correct_index": 1,
+      "explanation": "Risk parity seeks smoother returns by diversifying across different risk sources.",
+      "topic": "macro",
+      "level": "beginner"
+    },
+    {
+      "id": "quiz_003",
+      "question": "A tenbagger means a stock has: ",
+      "options": [
+        "Dropped 10%",
+        "Grown 10x",
+        "Paid 10 dividends",
+        "Had 10 analysts upgrades"
+      ],
+      "correct_index": 1,
+      "explanation": "Peter Lynch used tenbagger for investments that return roughly ten times original capital.",
+      "topic": "growth",
+      "level": "beginner"
+    },
+    {
+      "id": "quiz_004",
+      "question": "Which is most aligned with long-term conviction investing?",
+      "options": [
+        "Daily switching based on noise",
+        "Holding a quality thesis through volatility",
+        "Buying only because social media is bullish",
+        "Ignoring business fundamentals"
+      ],
+      "correct_index": 1,
+      "explanation": "Conviction investing requires thesis clarity and patience, not reactive trading.",
+      "topic": "conviction",
+      "level": "intermediate"
+    },
+    {
+      "id": "quiz_005",
+      "question": "Why track earnings quality, not just revenue growth?",
+      "options": [
+        "Revenue is never useful",
+        "Earnings quality reflects profitability durability",
+        "Only because analysts demand it",
+        "To avoid reading annual reports"
+      ],
+      "correct_index": 1,
+      "explanation": "Sustainable earnings and cash flow quality often matter more than headline growth.",
+      "topic": "fundamentals",
+      "level": "intermediate"
+    }
+  ]
+}

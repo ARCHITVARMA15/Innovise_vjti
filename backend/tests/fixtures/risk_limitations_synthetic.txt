@@ -1,0 +1,16 @@
+SYNTHETIC TEST SCENARIOS ONLY — no statement about a real business.
+
+Comparable receipt trends use financials_synthetic.txt:
+FY2024 current ratio: 400 / 200 = 2.00.
+FY2025 current ratio: 450 / 300 = 1.50.
+FY2024 debt-to-equity: 200 / 500 = 0.40.
+FY2025 debt-to-equity: 300 / 600 = 0.50.
+Directions warrant investigation; they do not establish financial distress.
+
+Scope mismatch scenario: an analyst claim explicitly uses standalone basis,
+while the selected financial facts use consolidated / synthetic GAAP.
+A mismatch requires review and never establishes contradiction.
+
+UNSUPPORTED ALLEGATION FOR TESTING, NOT EVIDENCE:
+Synthetic Fixture Co faces an undisclosed catastrophic acquisition risk.
+The financial fixture provides no direct support for this allegation.

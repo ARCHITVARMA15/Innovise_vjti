@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a18">
+  <title>Veritas · Financial Analytics</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0d1514;--panel:#141f1d;--panel2:#182522;--line:#293a35;--muted:#93a7a0;--text:#edf5f0;--green:#8fe0b2;--teal:#55c6a0;--red:#ff8b82;--amber:#f6ca76;--blue:#a5c9ff;--shadow:0 18px 48px #0003;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 82% -20%,#1d4436 0,transparent 36%),var(--bg);color:var(--text);min-height:100vh}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1440px;margin:auto;padding:0 42px 54px}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.brand{display:flex;gap:11px;align-items:center;font-weight:700;letter-spacing:.02em}.brandmark{width:32px;height:32px;border-radius:10px;background:var(--green);color:#112019;display:grid;place-items:center;font-size:18px}.brand small{display:block;font-size:10px;color:var(--muted);font-weight:500;letter-spacing:.13em;margin-top:2px}.top-right{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:12px}.badge{border:1px solid #466655;border-radius:999px;padding:7px 11px;color:#b7e5c7;letter-spacing:.04em}.crumb{margin-top:30px;color:var(--muted);font-size:12px}.crumb b{color:#d5e5dc;font-weight:500}.intro{display:flex;justify-content:space-between;align-items:end;gap:24px;margin:13px 0 26px}.eyebrow{color:var(--green);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.intro h1{font-size:clamp(27px,3vw,38px);letter-spacing:-.045em;margin:8px 0 8px;font-weight:600}.intro p{margin:0;color:var(--muted);font-size:13px}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid var(--line);border-radius:9px;padding:10px 14px;color:var(--text);background:#192522;font-size:12px;transition:.18s}.btn:hover{border-color:#628777;transform:translateY(-1px)}.btn.primary{color:#0e2118;background:var(--green);border-color:var(--green);font-weight:700}.btn.ghost{background:transparent}.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}.notice{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid #35483e;background:#141e1b;border-radius:10px;color:#aebeb5;font-size:11px;margin:0 0 18px}.notice strong{color:#dae7df;font-weight:600}.dot{height:7px;width:7px;border-radius:50%;background:var(--amber);flex:none}.status{margin-left:auto;color:var(--muted);white-space:nowrap}.status.success{color:var(--green)}.status.error{color:var(--red)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#182421,#121c1a);border-radius:12px;box-shadow:var(--shadow)}.metric{padding:17px 18px 16px;min-height:115px;position:relative;overflow:hidden}.metric:after{content:"";position:absolute;width:86px;height:86px;border-radius:50%;border:1px solid #ffffff09;right:-26px;top:-29px;box-shadow:0 0 0 13px #ffffff04,0 0 0 26px #ffffff03}.metric .label{color:var(--muted);font-size:11px;display:flex;gap:6px;align-items:center}.info{display:inline-grid;place-items:center;border:1px solid #4a6057;border-radius:50%;font-size:9px;width:14px;height:14px;color:#b2c6bb;cursor:help}.value{font-size:24px;letter-spacing:-.04em;font-weight:600;margin-top:12px;font-variant-numeric:tabular-nums}.sub{color:#799087;font-size:10px;margin-top:3px}.positive{color:var(--green)}.negative{color:var(--red)}.content{display:grid;grid-template-columns:minmax(0,1.68fr) minmax(310px,.88fr);gap:14px;margin-top:14px}.section{padding:18px}.section-head{display:flex;align-items:start;justify-content:space-between;gap:15px;margin-bottom:17px}.section h2{font-size:14px;margin:0;font-weight:600}.section .hint{font-size:10px;color:var(--muted);margin-top:5px}.select{background:#121c1a;color:#c6d5cc;border:1px solid var(--line);border-radius:7px;padding:7px 9px;font-size:10px}.chartbox{height:250px;position:relative}.chartbox svg{width:100%;height:100%;overflow:visible}.chart-legend{display:flex;gap:16px;color:var(--muted);font-size:10px}.legend-mark{display:inline-block;width:7px;height:7px;border-radius:2px;margin-right:6px}.chart-empty{height:100%;display:grid;place-items:center;color:#73877e;font-size:12px;border:1px dashed #31443c;border-radius:9px}.thresholds{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:0 0 12px}.field label{font-size:9px;color:var(--muted);display:block;margin:0 0 5px}.field input{width:100%;border:1px solid var(--line);border-radius:7px;background:#101916;color:#e8f1eb;padding:8px;font-size:11px;outline:none}.field input:focus{border-color:#5f977a}.rules-note{font-size:9px;color:#7e9389;margin:-4px 0 13px;line-height:1.5}.alerts{display:flex;flex-direction:column;gap:8px;max-height:302px;overflow:auto;padding-right:2px}.alert{padding:11px 12px;border-radius:9px;background:#1b2420;border:1px solid #36463e}.alert.high{border-left:2px solid var(--amber)}.alert.cash{border-left:2px solid var(--red)}.alert-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.alert-title{font-size:11px;font-weight:600}.severity{font-size:8px;text-transform:uppercase;letter-spacing:.1em;color:var(--amber)}.cash .severity{color:var(--red)}.alert-body{color:#a0b1a8;font-size:10px;line-height:1.5;margin:6px 0}.alert-foot{display:flex;align-items:center;justify-content:space-between}.review{font-size:9px;color:#92a79c}.review.done{color:var(--green)}.alert-actions{display:flex;gap:6px}.mini{border:0;background:transparent;color:#a9cdb5;font-size:9px;padding:3px 0}.mini:hover{text-decoration:underline}.empty-alert{text-align:center;color:#84978d;padding:25px 10px;font-size:11px;border:1px dashed #34453d;border-radius:9px}.table-card{margin-top:14px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:680px}th{text-align:left;color:#82968c;font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:8px;padding:10px 12px;border-bottom:1px solid var(--line)}td{padding:12px;border-bottom:1px solid #ffffff09;font-size:10px;color:#d6e1da}tbody tr:hover{background:#ffffff05}td.amount{text-align:right;font-variant-numeric:tabular-nums}th.amount{text-align:right}.tag{font-size:8px;padding:4px 7px;border-radius:999px;background:#1a3027;color:#9fe0b6}.tag.expense{background:#31251e;color:#e7bd90}.flag{color:var(--amber)}.ok{color:#72877d}.table-empty{padding:40px;text-align:center;color:#81948a;font-size:11px}.data-label{color:#789086;font-size:9px;margin-top:12px}.footer{margin-top:15px;color:#71847b;font-size:9px;text-align:center}.file-input{display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.shell{padding:0 22px 40px}.grid{grid-template-columns:repeat(2,1fr)}.content{grid-template-columns:1fr}.chartbox{height:230px}}
+    @media(max-width:560px){.shell{padding:0 14px 30px}.topbar{height:62px}.top-right .badge{display:none}.intro{display:block;margin-bottom:19px}.actions{margin-top:16px}.actions .btn{flex:1}.grid{gap:8px}.metric{padding:14px;min-height:105px}.value{font-size:19px}.content{gap:9px;margin-top:9px}.section{padding:14px}.thresholds{gap:7px}.chartbox{height:205px}.status{max-width:105px;overflow:hidden;text-overflow:ellipsis}.notice{align-items:flex-start}.notice .status{white-space:normal;text-align:right}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><div class="brandmark">V</div><div>VERITAS<small>FINANCIAL INTELLIGENCE</small></div></div>
+      <div class="top-right"><span class="badge">ANALYST WORKSPACE</span><span>Hackathon demo</span></div>
+    </header>
+    <div class="crumb">Workspace&nbsp; / &nbsp;<b>Financial Analytics</b></div>
+    <section class="intro">
+      <div><div class="eyebrow">Company performance</div><h1>Financial Analytics</h1><p>One clear view of your transactions, cash flow and review signals.</p></div>
+      <div class="actions">
+        <button class="btn ghost" id="sampleBtn">Load demo data</button>
+        <button class="btn ghost" id="cashflowBtn">Load cash-flow example</button>
+        <label class="btn primary" for="fileInput">↑ &nbsp;Upload CSV</label>
+        <input class="file-input" id="fileInput" type="file" accept=".csv,text/csv">
+      </div>
+    </section>
+    <div class="notice"><span class="dot"></span><span><strong>Demo runs in your browser.</strong> Data is held in memory and clears on refresh. Sample figures assume INR; no currency conversion.</span><span class="status" id="status">Load a CSV to begin</span></div>
+    <section class="grid" aria-label="Financial summary">
+      <article class="card metric"><div class="label">Total Income <span class="info" title="Sum of amount for income transactions in the active dataset.">i</span></div><div class="value" id="income">—</div><div class="sub">From loaded transactions</div></article>
+      <article class="card metric"><div class="label">Total Expenses <span class="info" title="Sum of amount for expense transactions in the active dataset.">i</span></div><div class="value" id="expenses">—</div><div class="sub">From loaded transactions</div></article>
+      <article class="card metric"><div class="label">Net Cash Flow <span class="info" title="Total income minus total expenses. Transaction-derived movement, not audited net profit.">i</span></div><div class="value" id="net">—</div><div class="sub">Income less expenses · not net profit</div></article>
+      <article class="card metric"><div class="label">Transactions <span class="info" title="Number of valid rows in the currently loaded dataset.">i</span></div><div class="value" id="count">—</div><div class="sub">Active dataset only</div></article>
+    </section>
+    <section class="content">
+      <article class="card section">
+        <div class="section-head"><div><h2>Cash flow trend</h2><div class="hint">Monthly income and expenses · date of transaction</div></div><select class="select" id="period" aria-label="Trend range"><option value="all">All periods</option><option value="6">Last 6 months</option><option value="3">Last 3 months</option></select></div>
+        <div class="chart-legend"><span><i class="legend-mark" style="background:#8fe0b2"></i>Income</span><span><i class="legend-mark" style="background:#6093bc"></i>Expenses</span></div>
+        <div class="chartbox" id="chart"><div class="chart-empty">Load data to see your monthly trend</div></div>
+        <div class="data-label" id="dataLabel">No active dataset</div>
+      </article>
+      <article class="card section">
+        <div class="section-head"><div><h2>Review alerts</h2><div class="hint">Rule-based signals · analyst review required</div></div><span class="badge" id="alertCount">0 ALERTS</span></div>
+        <div class="thresholds">
+          <div class="field"><label for="highThreshold">High-value threshold · INR</label><input id="highThreshold" type="number" min="0.01" step="1000" value="500000"></div>
+          <div class="field"><label for="lossThreshold">Net cash-flow threshold · INR</label><input id="lossThreshold" type="number" min="0.01" step="1000" value="100000"></div>
+        </div>
+        <div class="rules-note">High value triggers at or above the threshold. Negative net cash flow triggers at or below the negative threshold. Signals are not fraud findings or financial advice.</div>
+        <div class="alerts" id="alerts"><div class="empty-alert">Upload a CSV or load the demo dataset to evaluate rules.</div></div>
+      </article>
+    </section>
+    <section class="card section table-card">
+      <div class="section-head"><div><h2>Transactions</h2><div class="hint" id="tableHint">Most recent transactions from the active dataset</div></div><span class="badge" id="tableCount">0 ROWS</span></div>
+      <div class="table-wrap"><table><thead><tr><th>Date</th><th>Description</th><th>Category</th><th>Type</th><th class="amount">Amount</th><th>Alert</th></tr></thead><tbody id="rows"><tr><td colspan="6" class="table-empty">Your validated transaction data will appear here.</td></tr></tbody></table></div>
+    </section>
+    <footer class="footer">Financial Analytics · Browser-only hackathon demo · Uploaded data is not saved or sent to a server.</footer>
+  </main>
+  <script>
+    (() => {
+      const state = { rows: [], demo: false, source: '', reviewed: new Set() };
+      const $ = id => document.getElementById(id);
+      const money = value => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(value);
+      const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+      function setStatus(message, type='') { const node=$('status'); node.textContent=message; node.className='status'+(type?' '+type:''); }
+      function parseCsv(text) {
+        const input = text.replace(/^\uFEFF/, '');
+        const matrix=[]; let row=[], field='', quoted=false;
+        for(let i=0;i<input.length;i++) {
+          const char=input[i];
+          if(quoted) {
+            if(char==='"' && input[i+1]==='"') { field+='"'; i++; }
+            else if(char==='"') quoted=false;
+            else field+=char;
+          } else if(char==='"') { if(field.length) throw new Error(`Unexpected quote near character ${i+1}.`); quoted=true; }
+          else if(char===',') { row.push(field); field=''; }
+          else if(char==='\n' || char==='\r') { row.push(field); field=''; if(row.some(cell=>cell.trim()!=='')) matrix.push(row); row=[]; if(char==='\r'&&input[i+1]==='\n')i++; }
+          else field+=char;
+        }
+        if(quoted) throw new Error('A quoted field was not closed.');
+        row.push(field); if(row.some(cell=>cell.trim()!==''))matrix.push(row);
+        if(matrix.length<2) throw new Error('The CSV is empty or has no transaction rows.');
+        const headers=matrix[0].map(v=>v.trim().toLowerCase());
+        const required=['date','description','type','amount','category'];
+        const missing=required.filter(name=>!headers.includes(name));
+        if(missing.length)throw new Error(`Missing required column${missing.length>1?'s':''}: ${missing.join(', ')}.`);
+        const index=Object.fromEntries(required.map(name=>[name,headers.indexOf(name)]));
+        const result=[];
+        for(let n=1;n<matrix.length;n++) {
+          const cells=matrix[n]; const sourceRow=n+1;
+          if(cells.length!==headers.length)throw new Error(`Row ${sourceRow}: expected ${headers.length} columns but found ${cells.length}.`);
+          const get=key=>cells[index[key]].trim();
+          const date=get('date'), description=get('description'), type=get('type').toLowerCase(), amountText=get('amount'), category=get('category');
+          if(!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date)) || new Date(date+'T00:00:00Z').toISOString().slice(0,10)!==date)throw new Error(`Row ${sourceRow}: date must be a valid YYYY-MM-DD date.`);
+          if(!description)throw new Error(`Row ${sourceRow}: description cannot be empty.`);
+          if(!['income','expense'].includes(type))throw new Error(`Row ${sourceRow}: type must be income or expense.`);
+          if(!/^(?:\d+\.?\d*|\.\d+)$/.test(amountText) || !Number.isFinite(Number(amountText)) || Number(amountText)<=0)throw new Error(`Row ${sourceRow}: amount must be a finite positive number without a currency symbol.`);
+          if(!category)throw new Error(`Row ${sourceRow}: category cannot be empty.`);
+          result.push({date,description,type,amount:Number(amountText),category,sourceRow});
+        }
+        if(!result.length)throw new Error('The CSV contains no transactions.');
+        return result;
+      }
+      function thresholds() {
+        const high=Number($('highThreshold').value), loss=Number($('lossThreshold').value);
+        const valid=Number.isFinite(high)&&high>0&&Number.isFinite(loss)&&loss>0;
+        $('highThreshold').setCustomValidity(Number.isFinite(high)&&high>0?'':'Enter a threshold greater than zero.');
+        $('lossThreshold').setCustomValidity(Number.isFinite(loss)&&loss>0?'':'Enter a threshold greater than zero.');
+        return valid?{high,loss}:null;
+      }
+      function derivedAlerts() {
+        const config=thresholds(); if(!config||!state.rows.length)return [];
+        const income=state.rows.reduce((sum,r)=>sum+(r.type==='income'?r.amount:0),0);
+        const expenses=state.rows.reduce((sum,r)=>sum+(r.type==='expense'?r.amount:0),0);
+        const alerts=state.rows.filter(r=>r.amount>=config.high).map(r=>({id:`high-${r.sourceRow}`,kind:'high',row:r,title:'High-value transaction',body:`${r.description} · ${r.date} · ${money(r.amount)} meets the ${money(config.high)} review threshold.`}));
+        const net=income-expenses;
+        if(net<=-config.loss)alerts.push({id:'net-cashflow',kind:'cash',title:'Negative net cash flow',body:`Loaded dataset net cash flow is ${money(net)}, crossing the −${money(config.loss)} threshold.`});
+        return alerts;
+      }
+      function render() {
+        const rows=state.rows, income=rows.reduce((sum,r)=>sum+(r.type==='income'?r.amount:0),0), expenses=rows.reduce((sum,r)=>sum+(r.type==='expense'?r.amount:0),0), net=income-expenses;
+        $('income').textContent=rows.length?money(income):'—'; $('expenses').textContent=rows.length?money(expenses):'—';
+        $('net').textContent=rows.length?money(net):'—'; $('net').className='value '+(net<0?'negative':'positive'); $('count').textContent=rows.length?new Intl.NumberFormat('en-IN').format(rows.length):'—';
+        $('dataLabel').textContent=rows.length?`${state.demo?'DEMO DATA':'UPLOADED DATA'} · ${escapeHtml(state.source)} · ${new Set(rows.map(r=>r.date.slice(0,7))).size} month${new Set(rows.map(r=>r.date.slice(0,7))).size===1?'':'s'} · INR assumed`:'No active dataset';
+        renderChart(rows); renderAlerts(); renderTable(rows);
+      }
+      function renderChart(rows) {
+        const host=$('chart'); if(!rows.length){host.innerHTML='<div class="chart-empty">Load data to see your monthly trend</div>';return;}
+        const groups=new Map(); for(const r of rows){const key=r.date.slice(0,7);if(!groups.has(key))groups.set(key,{income:0,expenses:0});groups.get(key)[r.type==='income'?'income':'expenses']+=r.amount;}
+        let items=[...groups.entries()].sort((a,b)=>a[0].localeCompare(b[0])); const span=$('period').value;if(span!=='all')items=items.slice(-Number(span));
+        const w=720,h=250,left=62,right=15,top=18,bottom=35,plotW=w-left-right,plotH=h-top-bottom;const max=Math.max(1,...items.flatMap(([,d])=>[d.income,d.expenses]));
+        const niceStep=Math.pow(10,Math.floor(Math.log10(max/4)))*Math.max(1,Math.ceil(max/4/Math.pow(10,Math.floor(Math.log10(max/4)))));const ceiling=Math.ceil(max/niceStep)*niceStep;
+        let svg=`<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Monthly income and expenses"><g font-family="system-ui" font-size="9" fill="#82968c">`;
+        for(let i=0;i<=4;i++){const val=ceiling*i/4,y=top+plotH-(plotH*i/4);svg+=`<line x1="${left}" y1="${y}" x2="${w-right}" y2="${y}" stroke="#2b3c36" stroke-width="1"/><text x="${left-9}" y="${y+3}" text-anchor="end">${compact(val)}</text>`;}
+        const groupW=plotW/items.length,barW=Math.min(24,groupW*.25);
+        items.forEach(([month,d],i)=>{const center=left+groupW*(i+.5), hi=d.income/ceiling*plotH, he=d.expenses/ceiling*plotH;svg+=`<rect x="${center-barW-2}" y="${top+plotH-hi}" width="${barW}" height="${Math.max(1,hi)}" rx="3" fill="#8fe0b2"><title>${month} income ${money(d.income)}</title></rect><rect x="${center+2}" y="${top+plotH-he}" width="${barW}" height="${Math.max(1,he)}" rx="3" fill="#6093bc"><title>${month} expenses ${money(d.expenses)}</title></rect><text x="${center}" y="${h-10}" fill="#91a49a" text-anchor="middle">${monthLabel(month)}</text>`;});
+        svg+='</g></svg>'; host.innerHTML=svg;
+      }
+      function compact(n){if(n>=10000000)return '₹'+(n/10000000).toFixed(n%10000000?1:0)+'Cr';if(n>=100000)return '₹'+(n/100000).toFixed(n%100000?1:0)+'L';if(n>=1000)return '₹'+(n/1000).toFixed(n%1000?1:0)+'k';return '₹'+Math.round(n);}
+      function monthLabel(month){return new Date(month+'-01T00:00:00Z').toLocaleDateString('en-IN',{month:'short',year:'2-digit',timeZone:'UTC'});}
+      function renderAlerts(){const config=thresholds(),alerts=derivedAlerts();$('alertCount').textContent=`${alerts.length} ALERT${alerts.length===1?'':'S'}`;const empty=!state.rows.length?'Upload a CSV or load the demo dataset to evaluate rules.':!config?'Enter positive values for both thresholds to evaluate rules.':'No rules triggered. Your dataset has no alerts at these thresholds.';$('alerts').innerHTML=alerts.length?alerts.map(a=>`<div class="alert ${a.kind}"><div class="alert-top"><div class="alert-title">${escapeHtml(a.title)}</div><span class="severity">${a.kind==='high'?'Review':'Attention'}</span></div><div class="alert-body">${escapeHtml(a.body)}</div><div class="alert-foot"><span class="review ${state.reviewed.has(a.id)?'done':''}">${state.reviewed.has(a.id)?'Marked reviewed':'Needs review'}</span><div class="alert-actions"><button class="mini" data-action="whatsapp" data-id="${escapeHtml(a.id)}">Open WhatsApp to send ↗</button><button class="mini" data-action="review" data-id="${escapeHtml(a.id)}">${state.reviewed.has(a.id)?'Undo':'Mark reviewed'}</button></div></div></div>`).join(''):`<div class="empty-alert">${empty}</div>`;}
+      function renderTable(rows){$('tableCount').textContent=`${rows.length} ROW${rows.length===1?'':'S'}`;if(!rows.length){$('rows').innerHTML='<tr><td colspan="6" class="table-empty">Your validated transaction data will appear here.</td></tr>';return;}const flagged=new Set(derivedAlerts().filter(a=>a.row).map(a=>a.row.sourceRow));$('rows').innerHTML=[...rows].sort((a,b)=>b.date.localeCompare(a.date)||b.sourceRow-a.sourceRow).map(r=>`<tr><td>${escapeHtml(r.date)}</td><td>${escapeHtml(r.description)}</td><td>${escapeHtml(r.category)}</td><td><span class="tag ${r.type}">${r.type}</span></td><td class="amount">${money(r.amount)}</td><td class="${flagged.has(r.sourceRow)?'flag':'ok'}">${flagged.has(r.sourceRow)?'Review':'—'}</td></tr>`).join('');}
+      async function loadSample(kind='default'){setStatus('Loading demo data…');$('sampleBtn').disabled=true;$('cashflowBtn').disabled=true;try{const sample=kind==='cashflow'?`date,description,type,amount,category
+2026-09-02,Monthly sales,income,100000,Sales
+2026-09-04,Office rent,expense,150000,Operations
+2026-09-10,Payroll,expense,180000,People
+2026-09-19,Equipment repair,expense,95000,Operations`:`date,description,type,amount,category
+2026-10-01,Client payment,income,850000,Sales
+2026-10-03,Office rent,expense,95000,Operations
+2026-10-05,Cloud infrastructure,expense,42000,Technology
+2026-10-08,Consulting revenue,income,320000,Services
+2026-10-12,Equipment purchase,expense,275000,Capital expenditure
+2026-10-15,Enterprise payment,income,1250000,Sales
+2026-10-18,Emergency repair,expense,160000,Operations
+2026-10-20,Marketing campaign,expense,180000,Marketing`;const parsed=parseCsv(sample);state.rows=parsed;state.demo=true;state.source=kind==='cashflow'?'expense_heavy_transactions.csv':'sample_transactions.csv';state.reviewed.clear();setStatus('Demo data loaded','success');render();}catch(error){setStatus(error.message,'error');}finally{$('sampleBtn').disabled=false;$('cashflowBtn').disabled=false;}}
+      $('sampleBtn').addEventListener('click',()=>loadSample('default'));$('cashflowBtn').addEventListener('click',()=>loadSample('cashflow'));
+      $('fileInput').addEventListener('change',async event=>{const file=event.target.files?.[0];if(!file)return;setStatus('Validating CSV…');try{if(!file.name.toLowerCase().endsWith('.csv'))throw new Error('Please choose a .csv file.');const parsed=parseCsv(await file.text());state.rows=parsed;state.demo=false;state.source=file.name;state.reviewed.clear();setStatus(`${parsed.length} rows loaded`,'success');render();}catch(error){state.rows=[];state.demo=false;state.source='';state.reviewed.clear();render();setStatus(error.message,'error');}finally{event.target.value='';}});
+      ['highThreshold','lossThreshold'].forEach(id=>$(id).addEventListener('input',render));$('period').addEventListener('change',()=>renderChart(state.rows));
+      $('alerts').addEventListener('click',event=>{const button=event.target.closest('button[data-action]');if(!button)return;const alert=derivedAlerts().find(a=>a.id===button.dataset.id);if(!alert)return;if(button.dataset.action==='review'){state.reviewed.has(alert.id)?state.reviewed.delete(alert.id):state.reviewed.add(alert.id);renderAlerts();}else{const text=`Veritas financial alert: ${alert.title}. ${alert.body} Please review the Financial Analytics dashboard.`;window.open(`https://wa.me/?text=${encodeURIComponent(text)}`,'_blank','noopener,noreferrer');}});
+    })();
+  </script>
+</body>
+</html>

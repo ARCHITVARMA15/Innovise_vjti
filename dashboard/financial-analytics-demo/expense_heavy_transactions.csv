@@ -1,0 +1,5 @@
+date,description,type,amount,category
+2026-09-02,Monthly sales,income,100000,Sales
+2026-09-04,Office rent,expense,150000,Operations
+2026-09-10,Payroll,expense,180000,People
+2026-09-19,Equipment repair,expense,95000,Operations

@@ -1,0 +1,454 @@
+{
+  "entities": [
+    {
+      "id": "msft",
+      "name": "Microsoft Corporation",
+      "ticker": "MSFT",
+      "jurisdiction": "United States",
+      "aliases": [
+        "Microsoft",
+        "Microsoft Corp",
+        "MSFT"
+      ],
+      "external_ids": {
+        "SEC_CIK": "0000789019"
+      }
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn Corporation",
+      "jurisdiction": "United States",
+      "aliases": [
+        "LinkedIn"
+      ],
+      "external_ids": {}
+    },
+    {
+      "id": "northstar-demo",
+      "name": "Northstar Silicon (Demo)",
+      "jurisdiction": "Fictional demo entity",
+      "synthetic": true,
+      "aliases": [],
+      "external_ids": {}
+    },
+    {
+      "id": "orchard-demo",
+      "name": "Orchard Components (Demo)",
+      "jurisdiction": "Fictional demo entity",
+      "synthetic": true,
+      "aliases": [],
+      "external_ids": {}
+    },
+    {
+      "id": "meridian-demo",
+      "name": "Meridian Logistics (Demo)",
+      "jurisdiction": "Fictional demo entity",
+      "synthetic": true,
+      "aliases": [],
+      "external_ids": {}
+    }
+  ],
+  "sources": [
+    {
+      "id": "sec-msft-ex21-fy25",
+      "title": "Microsoft FY2025 Exhibit 21: subsidiaries",
+      "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-ex21.htm",
+      "publisher": "Microsoft Corporation / SEC EDGAR",
+      "published_at": "2025-07-30",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Exhibit 21, subsidiary table; curated excerpt",
+      "document_version": "0000950170-25-100235 EX-21",
+      "kind": "official",
+      "assertions": [
+        "msft-linkedin|msft|linkedin|parent_subsidiary"
+      ],
+      "text": "The following is a list of subsidiaries of Microsoft Corporation as of June 30, 2025,\nLinkedIn Corporation"
+    },
+    {
+      "id": "northstar-demo-source",
+      "title": "northstar-demo synthetic scenario disclosure",
+      "publisher": "Veritas demo fixture author",
+      "published_at": "2025-07-01",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Synthetic scenario, section 1",
+      "document_version": "demo-v1",
+      "kind": "synthetic",
+      "assertions": [
+        "northstar-msft|northstar-demo|msft|supplier",
+        "attributes:northstar-msft",
+        "event:northstar-msft"
+      ],
+      "text": "SYNTHETIC SCENARIO ONLY. northstar-demo is an invented counterparty in a Microsoft demonstration. Criticality: critical. Replaceability: sole_source. Inventory buffer: limited. Dependency percentage and affected revenue are not disclosed. Event: Fictional supplier liquidity stress may interrupt a sole-source component. Fictional standalone USD millions at June 30, 2025: current assets 10; current liabilities 50; total debt 40; total equity 10."
+    },
+    {
+      "id": "orchard-demo-source",
+      "title": "orchard-demo synthetic scenario disclosure",
+      "publisher": "Veritas demo fixture author",
+      "published_at": "2025-07-01",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Synthetic scenario, section 1",
+      "document_version": "demo-v1",
+      "kind": "synthetic",
+      "assertions": [
+        "orchard-msft|orchard-demo|msft|supplier",
+        "attributes:orchard-msft",
+        "event:orchard-msft"
+      ],
+      "text": "SYNTHETIC SCENARIO ONLY. orchard-demo is an invented counterparty in a Microsoft demonstration. Criticality: noncritical. Replaceability: replaceable. Inventory buffer: adequate. Dependency percentage and affected revenue are not disclosed. Event: Fictional replaceable supplier is under liquidity pressure. Fictional standalone USD millions at June 30, 2025: current assets 8; current liabilities 40; total debt 30; total equity 5."
+    },
+    {
+      "id": "meridian-demo-source",
+      "title": "meridian-demo synthetic scenario disclosure",
+      "publisher": "Veritas demo fixture author",
+      "published_at": "2025-07-01",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Synthetic scenario, section 1",
+      "document_version": "demo-v1",
+      "kind": "synthetic",
+      "assertions": [
+        "meridian-msft|meridian-demo|msft|logistics",
+        "attributes:meridian-msft",
+        "event:meridian-msft"
+      ],
+      "text": "SYNTHETIC SCENARIO ONLY. meridian-demo is an invented counterparty in a Microsoft demonstration. Criticality: unknown. Replaceability: unknown. Inventory buffer: unknown. Dependency percentage and affected revenue are not disclosed. Event: A fictional logistics disruption is being investigated."
+    },
+    {
+      "id": "msft-ar25",
+      "title": "Microsoft FY2025 consolidated financial statements",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "publisher": "Microsoft Corporation",
+      "published_at": "2025-07-30",
+      "retrieved_at": "2026-10-25T00:00:00Z",
+      "document_page": "Balance sheets and income statements, June 30, 2025",
+      "document_version": "FY2025 annual report",
+      "kind": "official",
+      "assertions": [],
+      "text": "FY2025 consolidated USD millions: current assets 191131; current liabilities 141218; total borrowings excluding leases 43151; equity 343479; revenue 281724; net income 101832. Borrowings are calculated as short-term debt 0 + current long-term debt 2999 + long-term debt 40152."
+    }
+  ],
+  "relationships": [
+    {
+      "id": "msft-linkedin",
+      "source_entity_id": "msft",
+      "target_entity_id": "linkedin",
+      "relationship_type": "parent_subsidiary",
+      "source_ids": [
+        "sec-msft-ex21-fy25"
+      ],
+      "excerpt": "LinkedIn Corporation",
+      "last_confirmed": "2025-06-30",
+      "rationale": "Exhibit 21 discloses subsidiary affiliation as of June 30, 2025. Direct legal shareholding, ownership percentage and guarantees are not disclosed by this excerpt."
+    },
+    {
+      "id": "northstar-msft",
+      "source_entity_id": "northstar-demo",
+      "target_entity_id": "msft",
+      "relationship_type": "supplier",
+      "source_ids": [
+        "northstar-demo-source"
+      ],
+      "excerpt": "SYNTHETIC SCENARIO ONLY. northstar-demo is an invented counterparty in a Microsoft demonstration. Criticality: critical. Replaceability: sole_source. Inventory buffer: limited. Dependency percentage and affected revenue are not disclosed. Event: Fictional supplier liquidity stress may interrupt a sole-source component. Fictional standalone USD millions at June 30, 2025: current assets 10; current liabilities 50; total debt 40; total equity 10.",
+      "effective_from": "2025-07-01",
+      "last_confirmed": "2025-07-01",
+      "synthetic": true,
+      "criticality": "critical",
+      "replaceability": "sole_source",
+      "inventory_buffer": "limited",
+      "risk_event": "Fictional supplier liquidity stress may interrupt a sole-source component.",
+      "event_source_ids": [
+        "northstar-demo-source"
+      ],
+      "attribute_source_ids": [
+        "northstar-demo-source"
+      ],
+      "mitigants": [
+        "Hypothetical qualification of another vendor; timing is unknown."
+      ]
+    },
+    {
+      "id": "orchard-msft",
+      "source_entity_id": "orchard-demo",
+      "target_entity_id": "msft",
+      "relationship_type": "supplier",
+      "source_ids": [
+        "orchard-demo-source"
+      ],
+      "excerpt": "SYNTHETIC SCENARIO ONLY. orchard-demo is an invented counterparty in a Microsoft demonstration. Criticality: noncritical. Replaceability: replaceable. Inventory buffer: adequate. Dependency percentage and affected revenue are not disclosed. Event: Fictional replaceable supplier is under liquidity pressure. Fictional standalone USD millions at June 30, 2025: current assets 8; current liabilities 40; total debt 30; total equity 5.",
+      "effective_from": "2025-07-01",
+      "last_confirmed": "2025-07-01",
+      "synthetic": true,
+      "criticality": "noncritical",
+      "replaceability": "replaceable",
+      "inventory_buffer": "adequate",
+      "risk_event": "Fictional replaceable supplier is under liquidity pressure.",
+      "event_source_ids": [
+        "orchard-demo-source"
+      ],
+      "attribute_source_ids": [
+        "orchard-demo-source"
+      ],
+      "mitigants": [
+        "Alternative suppliers are assumed qualified.",
+        "Inventory is assumed sufficient to cover switching."
+      ]
+    },
+    {
+      "id": "meridian-msft",
+      "source_entity_id": "meridian-demo",
+      "target_entity_id": "msft",
+      "relationship_type": "logistics",
+      "source_ids": [
+        "meridian-demo-source"
+      ],
+      "excerpt": "SYNTHETIC SCENARIO ONLY. meridian-demo is an invented counterparty in a Microsoft demonstration. Criticality: unknown. Replaceability: unknown. Inventory buffer: unknown. Dependency percentage and affected revenue are not disclosed. Event: A fictional logistics disruption is being investigated.",
+      "effective_from": "2025-07-01",
+      "last_confirmed": "2025-07-01",
+      "synthetic": true,
+      "criticality": "unknown",
+      "replaceability": "unknown",
+      "inventory_buffer": "unknown",
+      "risk_event": "A fictional logistics disruption is being investigated.",
+      "event_source_ids": [
+        "meridian-demo-source"
+      ],
+      "attribute_source_ids": [
+        "meridian-demo-source"
+      ],
+      "mitigants": [
+        "Alternative routes and contract terms have not been established."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "id": "northstar-demo-current_assets",
+      "entity_id": "northstar-demo",
+      "metric": "current_assets",
+      "value": "10",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "northstar-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "northstar-demo-current_liabilities",
+      "entity_id": "northstar-demo",
+      "metric": "current_liabilities",
+      "value": "50",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "northstar-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "northstar-demo-total_debt",
+      "entity_id": "northstar-demo",
+      "metric": "total_debt",
+      "value": "40",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "northstar-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "northstar-demo-total_equity",
+      "entity_id": "northstar-demo",
+      "metric": "total_equity",
+      "value": "10",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "northstar-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "orchard-demo-current_assets",
+      "entity_id": "orchard-demo",
+      "metric": "current_assets",
+      "value": "8",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "orchard-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "orchard-demo-current_liabilities",
+      "entity_id": "orchard-demo",
+      "metric": "current_liabilities",
+      "value": "40",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "orchard-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "orchard-demo-total_debt",
+      "entity_id": "orchard-demo",
+      "metric": "total_debt",
+      "value": "30",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "orchard-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "orchard-demo-total_equity",
+      "entity_id": "orchard-demo",
+      "metric": "total_equity",
+      "value": "5",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025 closing balance",
+      "period_type": "instant",
+      "period_end": "2025-06-30",
+      "reporting_basis": "standalone (synthetic)",
+      "document_version": "demo-v1",
+      "source_id": "orchard-demo-source",
+      "provenance": "Authored fixture value, not a real counterparty financial disclosure.",
+      "synthetic": true
+    },
+    {
+      "id": "msft-current_assets",
+      "entity_id": "msft",
+      "metric": "current_assets",
+      "value": "191131",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    },
+    {
+      "id": "msft-current_liabilities",
+      "entity_id": "msft",
+      "metric": "current_liabilities",
+      "value": "141218",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    },
+    {
+      "id": "msft-total_debt",
+      "entity_id": "msft",
+      "metric": "total_debt",
+      "value": "43151",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    },
+    {
+      "id": "msft-total_equity",
+      "entity_id": "msft",
+      "metric": "total_equity",
+      "value": "343479",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "instant",
+      "period_start": null,
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    },
+    {
+      "id": "msft-revenue",
+      "entity_id": "msft",
+      "metric": "revenue",
+      "value": "281724",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "duration",
+      "period_start": "2024-07-01",
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    },
+    {
+      "id": "msft-net_income",
+      "entity_id": "msft",
+      "metric": "net_income",
+      "value": "101832",
+      "currency": "USD",
+      "units": "millions",
+      "period": "FY2025",
+      "period_type": "duration",
+      "period_start": "2024-07-01",
+      "period_end": "2025-06-30",
+      "reporting_basis": "consolidated",
+      "document_version": "FY2025 annual report",
+      "source_id": "msft-ar25",
+      "provenance": "Curated extraction of Microsoft FY2025 statements; borrowings exclude leases and sum 0 + 2999 + 40152.",
+      "synthetic": false
+    }
+  ]
+}

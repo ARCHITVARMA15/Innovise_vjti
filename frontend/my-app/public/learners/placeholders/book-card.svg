@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="0.5" stop-color="#FBBF24"/>
+      <stop offset="1" stop-color="#FCD34D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g2)"/>
+  <rect x="250" y="150" width="320" height="360" rx="14" fill="#FFFFFF" fill-opacity="0.55"/>
+  <rect x="620" y="150" width="320" height="360" rx="14" fill="#FFFFFF" fill-opacity="0.32"/>
+  <line x1="600" y1="150" x2="600" y2="510" stroke="#0F172A" stroke-opacity="0.35" stroke-width="6"/>
+  <text x="250" y="565" fill="#0F172A" fill-opacity="0.75" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Book Summary</text>
+</svg>

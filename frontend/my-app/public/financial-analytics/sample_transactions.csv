@@ -1,0 +1,9 @@
+date,description,type,amount,category
+2026-10-01,Client payment,income,850000,Sales
+2026-10-03,Office rent,expense,95000,Operations
+2026-10-05,Cloud infrastructure,expense,42000,Technology
+2026-10-08,Consulting revenue,income,320000,Services
+2026-10-12,Equipment purchase,expense,275000,Capital expenditure
+2026-10-15,Enterprise payment,income,1250000,Sales
+2026-10-18,Emergency repair,expense,160000,Operations
+2026-10-20,Marketing campaign,expense,180000,Marketing

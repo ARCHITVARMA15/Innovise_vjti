@@ -1,0 +1,35 @@
+{
+  "company": "Microsoft Corporation",
+  "ticker": "MSFT",
+  "currency": "USD",
+  "report_fiscal_year": 2025,
+  "prepared_on": "2026-10-25",
+  "description": "Veritas-prepared CSV extracted from official Microsoft reports; not a Microsoft-published CSV.",
+  "sources": [
+    {
+      "title": "Microsoft FY2025 Annual Report",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "sha256": "564154a15ac28c0f7f72f304ae26b74c29cfca9f3eafe8d59595776769d621ca"
+    },
+    {
+      "title": "Microsoft FY2025 Q1 Earnings Release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q1/press-release-webcast",
+      "sha256": "4a885539e76cdc76eb24c61233d0f063e108f39aba9162453bb4a2e45a52ecbc"
+    },
+    {
+      "title": "Microsoft FY2025 Q2 Earnings Release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q2/press-release-webcast",
+      "sha256": "30148045d4f982837524d842cea408955ff6dabd9aaf406c20736f5ddde41043"
+    },
+    {
+      "title": "Microsoft FY2025 Q3 Earnings Release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q3/press-release-webcast",
+      "sha256": "22752f7e3467f613560ce2526a5502aa3c02eddb7513e81b1dd9abacf8aa8ae1"
+    },
+    {
+      "title": "Microsoft FY2025 Q4 Earnings Release",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast",
+      "sha256": "e58449bf6830c5c825af8863b8b41f2a8436a3ee15de001745df16b429c180ea"
+    }
+  ]
+}

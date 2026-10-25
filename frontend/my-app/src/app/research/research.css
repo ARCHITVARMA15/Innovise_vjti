@@ -1,0 +1,31 @@
+.research-main { margin-left: 16rem; }
+.research-shell > aside.w-20 + .research-main { margin-left: 5rem; }
+.research-shell > aside { overflow-y: auto; }
+.research-content { color: #0b1c30; }
+.research-content h1, .research-content h2, .research-content h3 { font-family: var(--font-manrope), sans-serif; }
+.research-content .rl-card { background: white; border: 1px solid #e2e8f0; border-radius: 1rem; box-shadow: 0 12px 32px rgba(11,28,48,.035); }
+.research-content label { display: flex; flex-direction: column; gap: .4rem; font-size: .875rem; font-weight: 600; }
+.research-content input:not([type=file]):not([type=checkbox]), .research-content textarea, .research-content select {
+  width: 100%; min-width: 0; border: 1px solid #cbd5e1; border-radius: .6rem; padding: .65rem .8rem;
+  background: #fff; color: #0b1c30; font-weight: 400;
+}
+.research-content input:focus, .research-content textarea:focus, .research-content select:focus {
+  outline: 2px solid #39b8fd; outline-offset: 2px;
+}
+.research-content .rl-primary { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border-radius: .65rem; padding: .7rem 1rem; background: #006591; color: white; font-size: .875rem; font-weight: 700; }
+.research-content .rl-secondary { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; border: 1px solid #cbd5e1; border-radius: .65rem; padding: .6rem .8rem; background: white; color: #0b1c30; font-size: .875rem; }
+.research-content button:disabled { opacity: .5; cursor: wait; }
+.research-content button:not(:disabled), .research-content a { cursor: pointer; }
+.research-content button:focus-visible, .research-content a:focus-visible { outline: 2px solid #006591; outline-offset: 3px; }
+.research-content .rl-error { border: 1px solid #fecaca; background: #fef2f2; color: #991b1b; border-radius: .75rem; padding: 1rem; overflow-wrap: anywhere; }
+.research-content .rl-muted { color: #64748b; font-size: .875rem; }
+@media (max-width: 767px) {
+  .research-shell > aside { width: 5rem; }
+  .research-main { margin-left: 5rem; }
+  .research-shell > aside nav a { justify-content: center; }
+  .research-shell > aside nav a > span:last-child { display: none; }
+  .research-shell > aside h1 { font-size: .8rem; }
+  .research-shell > aside > div:last-child { display: none; }
+  .research-shell > aside > div:first-child { padding: 0; flex-wrap: wrap; }
+  .research-shell header { padding-left: 1rem; padding-right: 1rem; }
+}

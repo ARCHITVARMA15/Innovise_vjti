@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#93C5FD"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g1)"/>
+  <rect x="180" y="140" width="520" height="300" rx="18" fill="white" fill-opacity="0.45"/>
+  <circle cx="860" cy="320" r="130" fill="white" fill-opacity="0.35"/>
+  <path d="M830 255L940 320L830 385V255Z" fill="#0F172A" fill-opacity="0.55"/>
+  <text x="180" y="510" fill="#0F172A" fill-opacity="0.75" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Video Lesson</text>
+</svg>

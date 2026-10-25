@@ -1,0 +1,95 @@
+{
+  "scope": "India capital markets with focus on SEBI and basic tax compliance red flags",
+  "disclaimer": "Educational compliance signal only. Not legal or tax advice.",
+  "categories": [
+    {
+      "id": "insider_trading",
+      "label": "Insider Trading / UPSI",
+      "severity": "high",
+      "statute_refs": ["SEBI PIT Regulations, 2015"],
+      "keywords": ["inside information", "insider tip", "upsi", "before results", "unpublished price sensitive", "confidential earnings"]
+    },
+    {
+      "id": "market_manipulation",
+      "label": "Market Manipulation",
+      "severity": "high",
+      "statute_refs": ["SEBI PFUTP Regulations, 2003"],
+      "keywords": ["pump and dump", "pump", "dump", "spoof", "circular trading", "artificial price", "operator activity"]
+    },
+    {
+      "id": "unregistered_advice",
+      "label": "Unregistered Advisory / Guaranteed Returns",
+      "severity": "medium",
+      "statute_refs": ["SEBI (Investment Advisers) Regulations, 2013"],
+      "keywords": ["guaranteed returns", "assured returns", "no risk profit", "sure shot", "tips service", "signal group"]
+    },
+    {
+      "id": "tax_evasion",
+      "label": "Tax Evasion Risk",
+      "severity": "high",
+      "statute_refs": ["Income-tax Act, 1961 (capital gains reporting)", "ITR disclosure obligations"],
+      "keywords": ["hide gains", "avoid tax", "undisclosed", "off-book", "cash only", "unreported income"]
+    },
+    {
+      "id": "disclosure_compliance",
+      "label": "Disclosure and Reporting",
+      "severity": "medium",
+      "statute_refs": ["SEBI LODR Regulations, 2015", "SEBI SAST Regulations, 2011"],
+      "keywords": ["disclosure", "related party", "pledge shares", "promoter holding", "sast", "pit window"]
+    },
+    {
+      "id": "crypto_vda_tax",
+      "label": "Crypto / VDA Tax Reporting",
+      "severity": "high",
+      "statute_refs": [
+        "Income-tax Act, 1961 Section 115BBH (Virtual Digital Assets)",
+        "Income-tax Act, 1961 Section 194S (TDS on VDA transfer)",
+        "ITR VDA disclosure obligations"
+      ],
+      "keywords": [
+        "crypto tax",
+        "vda tax",
+        "bitcoin tax",
+        "tds 194s",
+        "115bbh",
+        "hide crypto gains",
+        "unreported crypto",
+        "offshore exchange no tax"
+      ]
+    },
+    {
+      "id": "crypto_aml_pmla",
+      "label": "Crypto AML / PMLA Risk",
+      "severity": "high",
+      "statute_refs": [
+        "Prevention of Money Laundering Act, 2002",
+        "PML Rules and FIU-IND reporting obligations for VASP entities"
+      ],
+      "keywords": [
+        "mixing service",
+        "tumbler",
+        "anonymous wallet",
+        "kyc bypass",
+        "layering",
+        "hawala crypto",
+        "money laundering crypto",
+        "fiu reporting"
+      ]
+    },
+    {
+      "id": "crypto_cross_border",
+      "label": "Cross-Border Crypto and FEMA Risk",
+      "severity": "medium",
+      "statute_refs": ["FEMA, 1999", "RBI/FEMA cross-border reporting and remittance framework"],
+      "keywords": [
+        "send crypto abroad",
+        "foreign exchange crypto",
+        "cross border wallet",
+        "offshore transfer",
+        "fema",
+        "lrs crypto",
+        "international crypto remittance"
+      ]
+    }
+  ]
+}
