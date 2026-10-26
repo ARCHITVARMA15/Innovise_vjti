@@ -957,10 +957,9 @@ async def agent_health():
         if not api_key:
             return {"status": "error", "message": "GROQ_API_KEY not set in .env"}
 
-        from langchain_groq import ChatGroq
-        llm = ChatGroq(model="llama-3.1-8b-instant", max_tokens=5, api_key=api_key)
-        response = await llm.ainvoke([{"role": "user", "content": "hi"}])
-        return {"status": "ok", "model": "llama-3.1-8b-instant", "groq": "connected"}
+        from app.agent.config import ROUTER_MODEL, safe_llm_call
+        await safe_llm_call([{"role": "user", "content": "Reply READY only."}],model=ROUTER_MODEL,max_tokens=8)
+        return {"status": "ok", "model": ROUTER_MODEL, "groq": "connected"}
     except Exception as exc:
         return {"status": "error", "message": str(exc)}
 

@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState } from 'react';
 
 interface Holding {
@@ -81,7 +82,7 @@ export default function SellAssetModal({ holdings, onClose, onSuccess }: Props) 
                       {holding.ticker}
                     </div>
                     <div className="text-xs text-[#64748b]" style={{ fontFamily: 'Inter, sans-serif' }}>
-                      {holding.shares} Shares @ ${holding.costBasis.toLocaleString()}
+                      {holding.shares} Shares @ ${formatFinancialAmount(holding.costBasis)}
                     </div>
                   </div>
                 </div>

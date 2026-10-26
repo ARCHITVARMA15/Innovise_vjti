@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState, useRef, MouseEvent } from 'react';
 import type { PerformanceHistory, HistoryPeriod } from '@/lib/types/investment';
 
@@ -88,7 +89,7 @@ export default function PerformanceChart({ data }: Props) {
 
   // Format value for display
   const formatValue = (val: number) => {
-    if (val >= 1_000_000) return `₹${(val / 1_000_000).toFixed(2)}M`;
+    if (Math.abs(val) >= 1_000_000) return `₹${formatFinancialAmount(val)}`;
     if (val >= 1_000) return `₹${(val / 1_000).toFixed(1)}K`;
     return `₹${val.toFixed(0)}`;
   };

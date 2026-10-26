@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState, useEffect } from 'react';
 import StockSearchBar from '@/components/StockSearchBar';
 
@@ -281,7 +282,7 @@ export default function WatchlistTable() {
                     className="py-5 px-6 text-right font-bold text-sm"
                     style={{ color: '#0f172a', fontFamily: 'Inter, sans-serif' }}
                   >
-                    {h.current_value === 0 ? '—' : `$${h.current_value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`}
+                    {h.current_value === 0 ? '—' : `$${formatFinancialAmount(h.current_value)}`}
                   </td>
 
                   <td className="py-5 px-6 text-right">

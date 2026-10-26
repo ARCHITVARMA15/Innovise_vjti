@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useEffect, useRef, useState } from 'react';
 import type { Holding } from '@/lib/types/investment';
 import {
@@ -74,7 +75,7 @@ const CROSS_COL  = 'rgba(0,101,145,0.4)';
 const BORDER_COL = 'rgba(15,23,42,0.08)';
 
 const fmt = (n: number, d = 2) =>
-  n.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
+  Math.abs(n)>=1_000_000?formatFinancialAmount(n):n.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d });
 
 export default function HoldingDetailModal({ holding, onClose }: Props) {
   const [period,    setPeriod]    = useState<Period>('1M');

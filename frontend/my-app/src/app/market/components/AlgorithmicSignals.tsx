@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState } from 'react';
 import type { AlgoSignal, SignalStatus } from '@/lib/types/market';
 
@@ -196,7 +197,7 @@ export default function AlgorithmicSignals({ data }: Props) {
             <div>
               <p className="text-sm text-gray-500 mb-1" style={{ fontFamily: 'Inter, sans-serif' }}>Volume</p>
               <p className="text-2xl font-bold" style={{ color: '#0f172a', fontFamily: 'Manrope, sans-serif' }}>
-                {selectedStock.volume.toLocaleString()}
+                {formatFinancialAmount(selectedStock.volume)}
               </p>
             </div>
           </div>

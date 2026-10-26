@@ -16,11 +16,11 @@ log = logging.getLogger("veritas.config")
 
 # ── Model Configuration ──────────────────────────────────────────────────────
 
-PRIMARY_MODEL = "llama-3.3-70b-versatile"
-ROUTER_MODEL = "llama-3.1-8b-instant"
+PRIMARY_MODEL = os.getenv('INSIGHTS_MODEL', 'llama-3.3-70b-versatile')
+ROUTER_MODEL = os.getenv('INSIGHTS_ROUTER_MODEL', 'llama-3.1-8b-instant')
 
 PRIMARY_MAX_TOKENS = 2200
-ROUTER_MAX_TOKENS = 100
+ROUTER_MAX_TOKENS = 1200 if 'gpt-oss' in ROUTER_MODEL else 100
 
 PRIMARY_TEMPERATURE = 0.1
 ROUTER_TEMPERATURE = 0.0
@@ -57,6 +57,7 @@ async def safe_llm_call(
         raise RuntimeError("GROQ_API_KEY is not set in .env")
 
     last_error: Exception | None = None
+    fallback_model = os.getenv('INSIGHTS_FALLBACK_MODEL') or fallback_model
 
     for attempt in range(MAX_RETRIES + 1):
         current_model = model
@@ -68,8 +69,9 @@ async def safe_llm_call(
             llm = ChatGroq(
                 model=current_model,
                 temperature=temperature,
-                max_tokens=max_tokens,
+                max_tokens=max(max_tokens,1200) if 'gpt-oss' in current_model else max_tokens,
                 api_key=api_key,
+                **({'reasoning_effort':'low'} if 'gpt-oss' in current_model else {}),
             )
             response = await llm.ainvoke(messages)
             return response.content

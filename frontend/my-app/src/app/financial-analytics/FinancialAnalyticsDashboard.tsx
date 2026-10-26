@@ -4,7 +4,10 @@ import { useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { AlertTriangle, ArrowDownLeft, ArrowUpRight, Check, FileSpreadsheet, LoaderCircle, MessageCircle, Upload, Wallet } from 'lucide-react';
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
-import { deriveAlerts, MAX_FILE_BYTES, money, parseMoney, parseTransactions, summarize, Transaction, whatsappDraft } from './lib/analytics';
+import { deriveAlerts, MAX_FILE_BYTES, parseMoney, parseTransactions, summarize, Transaction, whatsappDraft } from './lib/analytics';
+
+import {formatFinancialAmount} from '@/lib/financial-overview';
+const money=(paise:number)=>`₹${formatFinancialAmount(paise,undefined,'paise')}`;
 
 const PAGE_SIZE = 20;
 export default function FinancialAnalyticsDashboard() {
@@ -94,7 +97,7 @@ export default function FinancialAnalyticsDashboard() {
         <div className="fa-chart" role="img" aria-label="Monthly income and expenses in INR">
           {rows.length ? <ResponsiveContainer width="100%" height="100%"><BarChart data={chartData} margin={{ top: 12, right: 8, left: 8, bottom: 0 }}>
             <CartesianGrid vertical={false} stroke="#e9eef2" /><XAxis dataKey="month" tick={{ fill: '#64748b', fontSize: 11 }} tickLine={false} axisLine={false} />
-            <YAxis width={70} tickFormatter={value => new Intl.NumberFormat('en-IN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) / 100)} tick={{ fill: '#64748b', fontSize: 11 }} tickLine={false} axisLine={false} />
+            <YAxis width={70} tickFormatter={value => formatFinancialAmount(Number(value),undefined,'paise')} tick={{ fill: '#64748b', fontSize: 11 }} tickLine={false} axisLine={false} />
             <Tooltip formatter={value => money(Number(value))} cursor={{ fill: '#f1f5f9' }} contentStyle={{ borderRadius: 12, borderColor: '#e2e8f0' }} /><Legend iconType="circle" wrapperStyle={{ fontSize: 12, paddingTop: 14 }} />
             <Bar dataKey="income" name="Income" fill="#009668" radius={[5, 5, 0, 0]} maxBarSize={44} /><Bar dataKey="expenses" name="Expenses" fill="#80aac6" radius={[5, 5, 0, 0]} maxBarSize={44} />
           </BarChart></ResponsiveContainer> : <div className="fa-empty"><FileSpreadsheet size={30} /><h3>Your cash-flow story starts here</h3><p>Upload a CSV or load a demo to see your monthly trend.</p><a href="/financial-analytics/sample_transactions.csv" download>Download CSV template</a></div>}

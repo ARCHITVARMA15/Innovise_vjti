@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useCallback, useEffect, useState } from 'react';
 import { extractFacts, listExtractions, listFacts, listCalculations, updateFact, deleteFact, factValues, metricLabel,
   type Fact, type FactStatus, type ExtractionRun, type CalculationReceipt } from '@/lib/api/financials';
@@ -43,11 +44,13 @@ export default function FinancialsPanel({caseId, documents}: {caseId: string; do
 
   useEffect(() => { void load(); }, [load]);
   useEffect(() => {
-    if (!extracting && !runs.some(run => run.status === 'running')) return;
-    const timer = setInterval(() => {
+    const update = () => {
+      if (document.hidden) return;
       refresh().catch(failure => setError(`Progress could not refresh: ${errorText(failure)}`));
-    }, 2000);
-    return () => clearInterval(timer);
+    };
+    const timer = setInterval(update, extracting || runs.some(run => run.status === 'running') ? 2000 : 15000);
+    window.addEventListener('focus', update);
+    return () => {clearInterval(timer);window.removeEventListener('focus', update);};
   }, [refresh, extracting, runs]);
 
   async function chooseSections(documentId: string) {
@@ -117,7 +120,7 @@ export default function FinancialsPanel({caseId, documents}: {caseId: string; do
 
     <section className="rl-card space-y-4 p-5" aria-labelledby="extraction-heading">
       <div className="flex flex-wrap items-center justify-between gap-3"><h2 id="extraction-heading" className="text-xl font-bold">Extract financial facts</h2><button className="rl-secondary" disabled={busy || extracting} onClick={load}>Refresh saved facts and receipts</button></div>
-      <p className="rl-muted">Choose saved documents. Their text is sent to Dexter’s configured Groq model for candidate extraction only. No URLs are fetched. Up to 6 bounded batches are processed; oversized or unprocessed sections are listed explicitly.</p>
+      <p className="rl-muted">Choose saved documents. Their text is sent to Dexter’s configured Groq model for candidate extraction only. No URLs are fetched. Up to 6 bounded batches are processed; successful sections are shown below; omitted sections are summarized.</p>
       {documents.length === 0 && <p className="rl-muted">Add source documents in Documents first. Manual entry also requires a saved source section.</p>}
       <div className="grid gap-2 md:grid-cols-2">{documents.map(doc => <label key={doc.id} className="!flex-row items-start rounded-lg border border-slate-200 p-3"><input type="checkbox" className="mt-1" checked={selectedDocuments.includes(doc.id)} disabled={extracting || busy} onChange={event => setSelectedDocuments(previous => event.target.checked ? [...previous, doc.id] : previous.filter(id => id !== doc.id))} /><span className="break-words">{doc.title}<span className="mt-1 block text-xs font-normal text-slate-500">{doc.page_count === null ? 'Text section' : `${doc.page_count} PDF pages`}</span></span></label>)}</div>
       {documents.filter(doc => selectedDocuments.includes(doc.id)).map(doc => <div key={doc.id} className="rounded-lg border border-slate-200 p-3">
@@ -128,10 +131,12 @@ export default function FinancialsPanel({caseId, documents}: {caseId: string; do
       </div>)}
       <div className="flex flex-wrap gap-2"><button className="rl-primary" disabled={extracting || busy || selectionLoading || selectedDocuments.length === 0} onClick={extract}>{extracting ? 'Extracting… status updates below' : 'Extract financial facts'}</button><button className="rl-secondary" disabled={extracting || busy || documents.length === 0} onClick={() => setEditor({fact: null})}>Add fact manually</button></div>
       {runs.map((run, index) => <details key={run.id} open={index === 0} className="rounded-lg border border-slate-200 p-3"><summary className="cursor-pointer text-sm font-semibold">{run.status} · {run.sections.filter(section => section.selected !== false).length} selected · {run.sections.filter(section => section.status === 'processed').length} processed · {run.sections.filter(section => section.status === 'skipped').length} omitted · {run.fact_ids.length} fact references · {formatTimestamp(run.created_at)}</summary>
-        <p className="rl-muted mt-2">Requested model: {run.model} (configured fallback may be used). Duplicates skipped: {run.duplicate_count}.</p>
+        <p className="rl-muted mt-2">{run.duplicate_count} duplicates skipped.</p>
         {run.errors.map((message, i) => <p key={i} className="mt-2 text-sm text-red-800">{message}</p>)}
-        <ul className="mt-3 space-y-2 text-xs">{run.sections.map(section => <li key={section.section_id} className="break-all"><strong>{section.label} · {section.status}</strong> · {section.section_id}{section.message ? ` — ${section.message}` : ''}</li>)}</ul>
-        <ul className="rl-muted mt-3 list-disc space-y-1 pl-4">{run.limitations.map((limitation, i) => <li key={i}>{limitation}</li>)}</ul>
+        <ul className="mt-3 space-y-2 text-sm">{run.sections.filter(section => section.status === 'processed').map(section => <li key={section.section_id}><strong>{section.label}</strong><span className="ml-2 text-emerald-700">Processed successfully</span></li>)}</ul>
+        {!run.sections.some(section => section.status === 'processed') && <p className="rl-muted mt-2">No sections were successfully processed in this run.</p>}
+        {run.sections.some(section => section.selected !== false && section.status !== 'processed' && section.message) && <details className="mt-2 text-sm text-amber-900"><summary className="cursor-pointer">Selected sections needing attention</summary><p className="mt-2">{[...new Set(run.sections.filter(section => section.selected !== false && section.status !== 'processed').map(section => section.message).filter(Boolean))].join('; ')}</p></details>}
+        <details className="mt-3 text-xs"><summary className="cursor-pointer text-slate-500">Extraction method and limitations</summary><p className="rl-muted mt-2">Requested model: {run.model} (configured fallback may be used).</p><ul className="rl-muted mt-2 list-disc space-y-1 pl-4">{run.limitations.map((limitation, i) => <li key={i}>{limitation}</li>)}</ul></details>
       </details>)}
     </section>
 
@@ -141,7 +146,7 @@ export default function FinancialsPanel({caseId, documents}: {caseId: string; do
       <div className="flex flex-wrap items-end justify-between gap-3"><div><h2 id="facts-heading" className="text-xl font-bold">Financial facts</h2><p className="rl-muted mt-1">Inspect the source, correct interpretations, then confirm or reject. Total debt excludes non-interest-bearing liabilities.</p></div><label>Status filter<select value={filter} onChange={event => setFilter(event.target.value)}>{['all', 'candidate', 'needs_review', 'confirmed', 'rejected', 'removed'].map(status => <option key={status} value={status}>{metricLabel(status)}</option>)}</select></label></div>
       {visibleFacts.length === 0 ? <p className="rl-muted">No facts in this view. Extract from selected documents or add a supported fact manually.</p> : <div className="rl-card overflow-x-auto"><table className="w-full min-w-[900px] text-left text-sm"><thead className="bg-slate-50 text-xs uppercase text-slate-500"><tr>{['Metric / entity', 'Value / unit', 'Financial period / basis', 'Source', 'Status', 'Review'].map(title => <th key={title} className="p-3">{title}</th>)}</tr></thead><tbody>{visibleFacts.map(fact => <tr key={fact.id} className="border-t border-slate-100 align-top">
         <td className="p-3"><p className="font-semibold capitalize">{metricLabel(fact.metric)}</p><p>{fact.entity ?? 'Unknown entity'}</p><p className="mt-1 break-all text-xs text-slate-500">{fact.id} · r{fact.revision}</p></td>
-        <td className="p-3"><p className="font-semibold">{fact.value}</p><p>{fact.currency ?? 'Unknown currency'} · {fact.scale ?? 'unknown scale'}</p></td>
+        <td className="p-3"><p className="font-semibold" title={`${fact.value} ${fact.currency} ${fact.scale}`}>{formatFinancialAmount(fact.value,fact.currency,fact.scale)}</p><p>{fact.currency ?? 'Unknown currency'} · source scale: {fact.scale ?? 'unknown'}</p></td>
         <td className="p-3"><p>{fact.reporting_period ?? 'Unknown label'} · {fact.period_type}</p><p>{fact.period_start ? `${fact.period_start} to ` : ''}{fact.period_end ?? 'Unknown date'}</p><p className="mt-1 text-slate-500">{fact.accounting_scope ?? 'Unknown scope/basis'}</p></td>
         <td className="max-w-48 break-words p-3"><button className="text-left text-[#006591] underline" disabled={sourceLoading} onClick={() => inspect(fact)}>{fact.source_snapshot.document_title} · {fact.source_snapshot.label}</button>{!fact.source_available && <p className="mt-1 text-amber-900">Source removed; historical excerpt only</p>}</td>
         <td className="p-3"><span className="rounded-full bg-sky-50 px-2 py-1 text-xs font-semibold">{fact.removed_at ? 'removed' : metricLabel(fact.status)}</span>{fact.ambiguity_note && <p className="mt-2 max-w-48 text-xs text-amber-900">{fact.ambiguity_note}</p>}</td>
@@ -161,6 +166,6 @@ export default function FinancialsPanel({caseId, documents}: {caseId: string; do
       <details><summary className="cursor-pointer text-sm font-bold">Original extraction and revision history</summary><p className="rl-muted mt-2">Original values never change. Analyst edits and status decisions create a new revision.</p><pre className="mt-2 max-h-80 overflow-auto whitespace-pre-wrap break-words rounded-lg bg-slate-50 p-3 text-xs">{JSON.stringify({original_values: sourceFact.original_values, history: sourceFact.history}, null, 2)}</pre></details>
     </section>}
 
-    <CalculationPanel caseId={caseId} facts={facts} receipts={receipts} onSaved={refresh} />
+    <CalculationPanel caseId={caseId} facts={facts} receipts={receipts} onSaved={refresh} onConfirmFact={fact => review(fact, 'confirmed')} onInspectFact={fact => {void inspect(fact); requestAnimationFrame(() => document.getElementById('fact-source-heading')?.scrollIntoView({behavior: 'smooth', block: 'center'}));}} />
   </div>;
 }

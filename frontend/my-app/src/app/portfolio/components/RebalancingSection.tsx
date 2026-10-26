@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-toastify';
@@ -130,7 +131,7 @@ export default function RebalancingSection({ recommendations, advisor }: Props) 
                       fontFamily: 'Inter, sans-serif',
                     }}
                   >
-                    {loading === rec.id ? 'Processing...' : `${cfg.amountPrefix}${rec.amount.toLocaleString()}`}
+                    {loading === rec.id ? 'Processing...' : `${cfg.amountPrefix}${formatFinancialAmount(rec.amount)}`}
                   </button>
                   <span
                     className="text-[10px] font-bold uppercase tracking-widest"

@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState } from 'react';
 import Link from 'next/link';
 import type { Holding } from '@/lib/types/investment';
@@ -167,7 +168,7 @@ export default function ActiveHoldings({ data }: Props) {
                     className="py-5 px-6 text-right font-bold text-sm"
                     style={{ color: '#0f172a', fontFamily: 'Inter, sans-serif' }}
                   >
-                    ${h.marketValue.toLocaleString('en-US', { minimumFractionDigits: 2 })}
+                    ${formatFinancialAmount(h.marketValue)}
                   </td>
 
                   {/* Return % */}

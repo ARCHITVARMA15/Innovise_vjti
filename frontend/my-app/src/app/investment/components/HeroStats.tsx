@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import type { InvestmentSummary } from '@/lib/types/investment';
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
 }
 
 function fmt(n: number) {
-  return n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return Math.abs(n)>=1_000_000?formatFinancialAmount(n):n.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 export default function HeroStats({ data }: Props) {
@@ -64,7 +65,7 @@ export default function HeroStats({ data }: Props) {
           >
             All-time profit:{' '}
             <span style={{ color: '#0b1c30', fontWeight: 600 }}>
-              {data.allTimeProfitAbs >= 0 ? '+' : '-'}₹{Math.abs(data.allTimeProfitAbs).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+              {data.allTimeProfitAbs >= 0 ? '+' : '-'}₹{formatFinancialAmount(Math.abs(data.allTimeProfitAbs))}
             </span>
           </span>
         </div>

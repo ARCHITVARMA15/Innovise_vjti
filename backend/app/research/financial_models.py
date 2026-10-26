@@ -9,7 +9,7 @@ from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_vali
 Metric = Literal["revenue", "net_income", "current_assets", "current_liabilities", "total_debt", "total_equity"]
 Scale = Literal["units", "thousands", "millions", "billions", "lakh", "crore"]
 FactStatus = Literal["candidate", "confirmed", "rejected", "needs_review"]
-CalculationType = Literal["revenue_growth", "net_profit_margin", "current_ratio", "debt_to_equity"]
+CalculationType = Literal["revenue_growth", "net_profit_margin", "current_ratio", "debt_to_equity", "net_income_growth", "working_capital"]
 DECIMAL_PATTERN = r"[+-]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?"
 
 Label = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=240)]
@@ -168,7 +168,7 @@ class CalculationRequest(BaseModel):
     # Exact named roles, each assigned an explicitly chosen saved fact ID.
     inputs: dict[str, str] = Field(default_factory=dict, max_length=2, description=(
         "Saved fact IDs by role: revenue_growth=current/previous; net_profit_margin=net_income/revenue; "
-        "current_ratio=current_assets/current_liabilities; debt_to_equity=total_debt/total_equity. No client results."))
+        "current_ratio and working_capital=current_assets/current_liabilities; net_income_growth=current/previous net income; debt_to_equity=total_debt/total_equity. No client results."))
     acknowledged_conflicts: dict[str, list[str]] = Field(default_factory=dict, max_length=2)
 
 

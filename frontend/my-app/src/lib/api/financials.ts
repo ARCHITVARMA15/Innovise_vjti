@@ -3,7 +3,7 @@ import { apiFetch, apiPost } from './client';
 export const METRICS = ['revenue', 'net_income', 'current_assets', 'current_liabilities', 'total_debt', 'total_equity'] as const;
 export const SCALES = ['units', 'thousands', 'millions', 'billions', 'lakh', 'crore'] as const;
 export type FactStatus = 'candidate' | 'confirmed' | 'rejected' | 'needs_review';
-export type CalculationType = 'revenue_growth' | 'net_profit_margin' | 'current_ratio' | 'debt_to_equity';
+export type CalculationType = 'revenue_growth' | 'net_profit_margin' | 'current_ratio' | 'debt_to_equity' | 'net_income_growth' | 'working_capital';
 export interface FactInput {
   document_id: string;
   section_id: string;

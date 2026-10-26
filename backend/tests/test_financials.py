@@ -46,6 +46,21 @@ class FinancialTests(unittest.TestCase):
         self.client.close()
         self.temp.cleanup()
 
+    def test_additional_growth_and_working_capital_receipts(self):
+        income={year:self.fact('net_income',year) for year in (2024,2025)}
+        growth=calculate(self.financials,self.case['id'],CalculationRequest(calculation_type='net_income_growth',inputs={'current':income[2025]['id'],'previous':income[2024]['id']}))
+        self.assertEqual(growth['status'],'valid');self.assertEqual(growth['display_result'],'32.00')
+        assets=self.fact('current_assets',2025);liabilities=self.fact('current_liabilities',2025)
+        request=CalculationRequest(calculation_type='working_capital',inputs={'current_assets':assets['id'],'current_liabilities':liabilities['id']})
+        capital=calculate(self.financials,self.case['id'],request)
+        self.assertEqual(capital['status'],'valid');self.assertEqual(capital['result'],'1500000000');self.assertEqual(capital['result_unit'],'INR')
+        self.assertEqual(len(capital['sources']),2);self.assertEqual(len(capital['conversions']),2)
+        previous=self.fact('current_liabilities',2024)
+        invalid=calculate(self.financials,self.case['id'],CalculationRequest(calculation_type='working_capital',inputs={'current_assets':assets['id'],'current_liabilities':previous['id']}))
+        self.assertEqual(invalid['status'],'unavailable')
+        reversed_growth=calculate(self.financials,self.case['id'],CalculationRequest(calculation_type='net_income_growth',inputs={'current':income[2024]['id'],'previous':income[2025]['id']}))
+        self.assertEqual(reversed_growth['status'],'unavailable')
+
     def input(self, metric="revenue", year=2025, **overrides):
         index = METRICS.index(metric)
         income = metric in ("revenue", "net_income")

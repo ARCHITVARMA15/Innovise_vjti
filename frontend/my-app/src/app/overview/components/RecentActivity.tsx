@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import Link from 'next/link';
 import type { ActivityItem, ActivityType } from '@/lib/types/overview';
 
@@ -77,7 +78,7 @@ export default function RecentActivity({ data }: Props) {
                         fontFamily: 'Manrope, sans-serif' 
                       }}
                     >
-                      {(item as any).amount > 0 ? '+' : ''}₹{Math.abs((item as any).amount).toLocaleString('en-IN')}
+                      {(item as any).amount > 0 ? '+' : ''}₹{formatFinancialAmount(Math.abs((item as any).amount))}
                     </span>
                   )}
                 </div>

@@ -17,6 +17,8 @@ SPECS = {
     "net_profit_margin": ({"net_income": "net_income", "revenue": "revenue"}, "net_income / revenue * 100", "%"),
     "current_ratio": ({"current_assets": "current_assets", "current_liabilities": "current_liabilities"}, "current_assets / current_liabilities", "ratio"),
     "debt_to_equity": ({"total_debt": "total_debt", "total_equity": "total_equity"}, "total_debt / total_equity", "ratio"),
+    "net_income_growth": ({"current": "net_income", "previous": "net_income"}, "(current - previous) / previous * 100", "%"),
+    "working_capital": ({"current_assets": "current_assets", "current_liabilities": "current_liabilities"}, "current_assets - current_liabilities", "currency"),
 }
 
 
@@ -67,8 +69,22 @@ def debt_to_equity(total_debt: Decimal, total_equity: Decimal) -> Decimal:
         return total_debt / total_equity
 
 
+def working_capital(current_assets: Decimal, current_liabilities: Decimal) -> Decimal:
+    with localcontext() as context:
+        context.prec = 80
+        context.rounding = ROUND_HALF_EVEN
+        return current_assets - current_liabilities
+
+
+def net_income_growth(current: Decimal, previous: Decimal) -> Decimal:
+    if previous <= 0:
+        raise CalculationUnavailable('Net-income growth is not meaningful for zero or negative prior net income in this MVP.')
+    return revenue_growth(current, previous)
+
+
 TOOLS = {"revenue_growth": revenue_growth, "net_profit_margin": net_profit_margin,
-         "current_ratio": current_ratio, "debt_to_equity": debt_to_equity}
+         "current_ratio": current_ratio, "debt_to_equity": debt_to_equity,
+         "net_income_growth": net_income_growth, "working_capital": working_capital}
 
 
 def canonical(value):
@@ -130,14 +146,14 @@ def calculate(store: FinancialStore, case_id: str, request: CalculationRequest) 
                 errors.append("Currency mismatch. No implicit FX conversion is supported.")
             if len({canonical(f["accounting_scope"]) for f in values}) != 1:
                 errors.append("Accounting scope/basis mismatch. Resolve consolidated/standalone or other basis differences.")
-            income = request.calculation_type in ("revenue_growth", "net_profit_margin")
+            income = request.calculation_type in ("revenue_growth", "net_profit_margin", "net_income_growth")
             for role, fact in chosen.items():
                 if fact["period_type"] != ("duration" if income else "instant"):
                     errors.append(f"{role}: requires an explicit {'duration' if income else 'instant'} reporting period.")
                 if income and not fact["period_start"]:
                     receipt["missing_inputs"].append(f"{role}.period_start")
             if income and all(f["period_start"] and f["period_end"] for f in values):
-                if request.calculation_type == "revenue_growth":
+                if request.calculation_type in ("revenue_growth", "net_income_growth"):
                     current, previous = chosen["current"], chosen["previous"]
                     duration = lambda f: (date.fromisoformat(f["period_end"]) - date.fromisoformat(f["period_start"])).days + 1
                     if current["period_start"] <= previous["period_end"]:
@@ -170,6 +186,7 @@ def calculate(store: FinancialStore, case_id: str, request: CalculationRequest) 
                     context.prec = 100
                     display = format(result.quantize(Decimal("0.01"), rounding=ROUND_HALF_EVEN), "f")
                 receipt.update(status="valid", result=format(result, "f"), display_result=display)
+                if unit == 'currency':receipt['result_unit'] = next(iter(chosen.values()))['currency']
             except CalculationUnavailable as exc:
                 errors.append(str(exc))
         db.execute("INSERT INTO calculation_receipts VALUES (?, ?, ?)", (receipt["id"], case_id, json.dumps(receipt)))

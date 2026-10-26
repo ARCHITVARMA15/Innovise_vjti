@@ -1,15 +1,10 @@
+import {formatFinancialAmount} from '../financial-overview';
 // ─── Number & Date Formatting Utilities ──────────────────────────────────────
 
 export function formatCurrency(value: number, compact = false): string {
+  if (Math.abs(value) >= 1_000_000 || compact) return `₹${formatFinancialAmount(value)}`;
   // Default to Indian Rupee formatting
-  if (compact) {
-    return new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      notation: 'compact',
-      maximumFractionDigits: 1,
-    }).format(value);
-  }
+
   return new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',

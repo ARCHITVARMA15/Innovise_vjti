@@ -1,5 +1,6 @@
 'use client';
 
+import {formatFinancialAmount} from '@/lib/financial-overview';
 import { useState } from 'react';
 import type { GoalTracker } from '@/lib/types/portfolio';
 import GoalSettingModal from './GoalSettingModal';
@@ -9,7 +10,7 @@ interface Props {
 }
 
 function formatValue(n: number): string {
-  if (n >= 1_000_000) return `₹${(n / 1_000_000).toFixed(2)}M`;
+  if (n >= 1_000_000) return `₹${formatFinancialAmount(n)}`;
   if (n >= 1_000) return `₹${(n / 1_000).toFixed(0)}K`;
   return `₹${n.toLocaleString('en-IN')}`;
 }
